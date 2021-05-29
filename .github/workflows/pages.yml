@@ -41,7 +41,7 @@ jobs:
           cd ./public/
           git add .
           git commit -m "CI built at `date +"%Y-%m-%d %H:%M:%S"`"
-          git push --force --quiet "https://${secrets.DEPLOY_KEY}@${GH_REF}" master:main
+          git push --force --quiet "https://$${{secrets.DEPLOY_KEY}}@${GH_REF}" master:main
      env:
        global:
        # Github Pages

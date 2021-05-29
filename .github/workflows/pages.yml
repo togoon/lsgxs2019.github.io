@@ -15,11 +15,11 @@ steps:
 - name: Checkout
 uses: actions/checkout@v2
 with:
-persist-credentials:'false'
+persist-credentials: 'false'
 
-- name: Hexo Deploy
-run: npm install |
-    npm run build
+#- name: HexoDeploy
+#run: npm install |
+#  npm run build
 
 - name: Deploy
 uses: JamesIves/github-pages-deploy-action@releases/v3

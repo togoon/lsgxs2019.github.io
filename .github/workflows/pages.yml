@@ -19,14 +19,17 @@ jobs:
       uses: actions/setup-node@master 
       with: 
         node-version: "14.x"    
-      - name: Setup Hexo Dependencies 
-     run: | 
+    
+    - name: Setup Hexo Dependencies 
+      
+        run: | 
        npm install hexo-cli -g 
        npm install 
+    
     - name: Setup Deploy Private  Key 
-     env: 
+      env: 
        HEXO_DEPLOY_PRIVATE_KEY: ${{ secrets.HEXO_DEPLOY_PRIVATE_KEY }} 
-       run: | 
+      run: | 
          mkdir -p ~/.ssh/ 
          echo "$HEXO_DEPLOY_PRIVATE_KEY" > ~/.ssh/id_rsa 
          chmod 600 ~/.ssh/id_rsa 

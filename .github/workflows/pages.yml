@@ -6,7 +6,8 @@ on:
     branches:  
       - source 
 jobs: 
-    build: runs-on: ubuntu-latest 
+    build: 
+      runs-on: ubuntu-latest 
     
     steps: 
     # check it to your workflow can access it 

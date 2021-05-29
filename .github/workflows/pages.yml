@@ -1,39 +1,42 @@
-name: Deploy GitHub Pages
+# workflow name
+name: Deploy To Github Pages
 
-# 触发条件：在 push 到 master 分支后
-on:
-push:
-branches:
-- source
+# 当有 push 到仓库和外部触发的时候就运行
+on: [push]
 
-# 任务
 jobs:
-build-and-deploy:
-# 服务器环境：最新版 Ubuntu
-runs-on: ubuntu-latest
-steps:
-# 拉取代码
-- name: Checkout
-uses: actions/checkout@v2
-with:
-persist-credentials: false
-
-# Runs a set of commands using the runners shell
-- name: Run a multi-line script
-  run: |
-    npm install,
-    npm run build
-
-
-# 部署到 GitHub Pages
-- name: Deploy
-uses: JamesIves/github-pages-deploy-action@releases/v3
-with:
-ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-REPOSITORY_NAME: lsgxs2019/lsgxs2019.github.io
-BRANCH: master
-FOLDER: public
-#注意这里的 public 是仓库根目录下的 public，也就是 npm run build 生成静态资源的路径，比如有的人是 `docs/.vuepress/dist`
-
-
-
+  deploy: 
+    name: Deploy Hexo Public To Pages
+    runs-on: ubuntu-latest 
+    env:
+      TZ: Asia/Shanghai    
+        
+    steps:
+    # check it to your workflow can access it
+    # from: https://github.com/actions/checkout
+    - name: Checkout Repository master branch
+      uses: actions/checkout@master 
+      
+    # from: https://github.com/actions/setup-node  
+    - name: Setup Node.js 14.x 
+      uses: actions/setup-node@master
+      with:
+        node-version: "14.x"
+    
+    # from https://github.com/x-cold/yuque-hexo
+    - name: Setup Hexo Dependencies and Generate Public Files
+      env:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+      run: |
+        npm install hexo-cli -g
+        npm install
+        
+    # from https://github.com/peaceiris/actions-gh-pages    
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          external_repository: lsgxs2019/lsgxs2019.github.io.git 
+          publish_branch: master
+          publish_dir: ./public
+          commit_message: ${{ github.event.head_commit.message }}    

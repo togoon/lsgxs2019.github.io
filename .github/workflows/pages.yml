@@ -2,8 +2,9 @@
 name: Hexo Blog CI 
 # master branch on push, auto run 
 on: 
-  push: branches: 
-    - source 
+  push: 
+    branches:  
+      - source 
 jobs: 
     build: runs-on: ubuntu-latest 
     

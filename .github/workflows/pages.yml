@@ -1,42 +1,42 @@
-# workflow name
-name: Deploy To Github Pages
-
-# 当有 push 到仓库和外部触发的时候就运行
-on: [push]
-
-jobs:
-  deploy: 
-    name: Deploy Hexo Public To Pages
-    runs-on: ubuntu-latest 
-    env:
-      TZ: Asia/Shanghai    
-        
-    steps:
-    # check it to your workflow can access it
-    # from: https://github.com/actions/checkout
-    - name: Checkout Repository master branch
-      uses: actions/checkout@master 
-      
-    # from: https://github.com/actions/setup-node  
-    - name: Setup Node.js 14.x 
-      uses: actions/setup-node@master
-      with:
-        node-version: "14.x"
+# workflow name 
+name: Hexo Blog CI 
+# master branch on push, auto run 
+on: 
+  push: branches: 
+    - source 
+jobs: 
+    build: runs-on: ubuntu-latest 
     
-    # from https://github.com/x-cold/yuque-hexo
-    - name: Setup Hexo Dependencies and Generate Public Files
-      env:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-      run: |
-        npm install hexo-cli -g
-        npm install
+    steps: 
+    # check it to your workflow can access it 
+    # from: https://github.com/actions/checkout 
+    - name: Checkout Repository master branch 
+    uses: actions/checkout@master 
+    # from: https://github.com/actions/setup-node 
+    - name: Setup Node.js 10.x 
+      uses: actions/setup-node@master 
+      with: 
+        node-version: "14.x" 
         
-    # from https://github.com/peaceiris/actions-gh-pages    
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-          deploy_key: ${{ secrets.SSH_PRIVATE_KEY }}
-          external_repository: lsgxs2019/lsgxs2019.github.io.git 
-          publish_branch: master
-          publish_dir: ./public
-          commit_message: ${{ github.event.head_commit.message }}    
+     - name: Setup Hexo Dependencies 
+     run: | 
+       npm install hexo-cli -g 
+       npm install 
+     
+     - name: Setup Deploy Private  Key 
+     env: 
+       HEXO_DEPLOY_PRIVATE_KEY: ${{ secrets.HEXO_DEPLOY_PRIVATE_KEY }} 
+       run: | 
+         mkdir -p ~/.ssh/ 
+         echo "$HEXO_DEPLOY_PRIVATE_KEY" > ~/.ssh/id_rsa 
+         chmod 600 ~/.ssh/id_rsa 
+         ssh-keyscan github.com >> ~/.ssh/known_hosts 
+      - name: Setup Git Infomation 
+        run: | 
+        git config --global user.name 'lsgxs2019' 
+        git config --global user.email 'lsgxs141@126.com' 
+      - name: Deploy Hexo 
+        run: | 
+          hexo clean 
+          hexo generate 
+          hexo deploy

@@ -11,13 +11,14 @@ build-and-deploy:
 runs-on: ubuntu-latest
 
 steps:
+
 - name: Checkout
 uses: actions/checkout@v2
 with:
 persist-credentials:'false'
 
-- name: builder
-run: npm install && npm run build
+-name:startbuild 
+   run: npm install && npm run build
 
 # 2、部署到 GitHub Pages
 - name: Deploy

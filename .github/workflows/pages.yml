@@ -31,12 +31,12 @@ jobs:
       - name: Deploy # 发布
         env:
           GH_REF: github.com/lsgxs2019/lsgxs2019.github.io.git 
-          GH_TOKEN: ${{ secrets.DEPLOY_KEY }} # 预先生成 GitHub Token
+          GH_TOKEN: ${{ secrets.DEPLOY_KEY }} 
               
         run: |
           git config --global user.name "lsgxs2019"
           git config --global user.email "lsgxs141@126.com"
-          git clone https://${GH_REF}.deploy_git
+          git clone https://${GH_REF}   .deploy_git
           cd .deploy_git
           git checkout master
           cd ../

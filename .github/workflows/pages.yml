@@ -1,50 +1,35 @@
-name: Hexo deployer # Actions 名字
-
-on: 
-  push:
-    branches:
-      - source 
-
+name: Deployment
+on:
+push:
+branches: [source] # only push events on source branch trigger deployment
 jobs:
-  build: # job id
-    name: Build and publish # job 名，不写默认使用 job id
-    runs-on: ubuntu-latest # 运行环境，可选 ubuntu-latest, ubuntu-18.04, ubuntu-16.04, windows-latest, windows-2019, windows-2016, macOS-latest, macOS-10.14
-
-    steps:
-      - uses: actions/checkout@v1 # 拉取博客最新源文件
-
-      - name: Use Node.js 14.x # 指定 Node.js 版本
-        uses: actions/setup-node@v1
-        with:
-          node-version: 14.x
-
-      - name: Setup Hexo env # 初始化 Hexo 环境
-        run: |
-          - npm install hexo-cli -g
-          - npm install hexo-deployer-git --save
-          - npm install
-      - name: Generate public files # 生成博客预发布文件
-        run: |
-          hexo clean
-          hexo g  
-
-      - name: Deploy # 发布
-        
-        run: |
-          git config --global user.name "lsgxs2019"
-          git config --global user.email "lsgxs141@126.com"
-          git clone https://${GH_REF}   .deploy_git
-          cd .deploy_git
-          git checkout master
-          cd ../
-          mv .deploy_git/.git/ ./public/
-          cd ./public/
-          git add .
-          git commit -m "CI built at `date +"%Y-%m-%d %H:%M:%S"`"
-          git push --force --quiet https://$GH_TOKEN@$GH_REF master:main
-     env:
-       global:
-       # Github Pages
-      - GH_TOKEN: ${{secrets.DEPLOY_KEY}}
-      - GH_REF: github.com/lsgxs2019/lsgxs2019.github.io.git 
-        
+hexo-deployment:
+runs-on: ubuntu-latest
+env:
+TZ: Asia/Shanghai
+steps:
+- name: Checkout source
+uses: actions/checkout@v2
+with:
+submodules: true
+- name: Setup Node.js
+uses: actions/setup-node@v1
+with:
+node-version: '14.x'
+- name: Install dependencies & Generate static files
+run: |
+node -v
+npm i -g hexo-cli
+npm i
+hexo clean
+hexo g
+- name: Deploy to Github Pages
+env:
+REPO: github.com/lsgxs2019/lsgxs2019.github.io
+GH_TOKEN: ${{ secrets.DEPLOY_KEY }}
+run: |
+cd ./public && git init && git add .
+git config --global user.name "lsgxs2019"
+git config --global user.email "lsgxs141@126.com"
+git commit -m "Site deployed by GitHub Actions"
+git push --force --quiet "https://$GH_TOKEN@$REPO" master:master

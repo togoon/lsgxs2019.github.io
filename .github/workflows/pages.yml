@@ -34,7 +34,7 @@ jobs:
     # from https://github.com/peaceiris/actions-gh-pages    
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
-        with:
+      with:
           deploy_key: ${{ secrets.SSH_PRIVATE_KEY }}
           external_repository: lsgxs2019/lsgxs2019.github.io.git 
           publish_branch: master

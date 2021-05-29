@@ -17,7 +17,7 @@ steps:
 uses: actions/checkout@v2
 with:
 persist-credentials:'false'
-- name: Buildxx
+- name: bud2
 run: npm install && npm run build
 
 # 2、部署到 GitHub Pages

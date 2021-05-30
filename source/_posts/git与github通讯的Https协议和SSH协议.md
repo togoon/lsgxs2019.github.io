@@ -6,7 +6,7 @@ tag:
     -Https 
 ---
 
-
+## git与github通讯的Https协议和SSH协议
 
 在安装Git后，需要使用git命令与github仓库通讯，一般由两种协议实现与git与github仓库的通讯
 
@@ -27,6 +27,7 @@ tag:
 
   ```
   1.ssh-keygen  -t rsa  -C "username.com--这里是密钥的注释，一般使用邮箱可说明它的用途"
+  这里的-t rsa 参数知名密钥类型为rsa，-C 为注释。也可以再加上-f filename来指定密钥的文件名称。
   在安装git之后，使用这个命令可在默认的路径下生成id_rsa.pub和id_rsa这两个公钥和私钥文件，一般要查询他的路劲，可在git bash 命令行下输入下面的命令：
   cd ~/.ssh
   ls -al 
@@ -34,8 +35,8 @@ tag:
   3.在git bash命令窗口下使用clip < id_rsa.pub，可以把文件的内容复制到剪贴板上，登录到github，在网站的setting下打开SSH及GPG Keys选项，titile随便自己一个，把剪贴板的内容粘贴在ssh-key里，保存即可，以后使用git 操作github仓库时就可以使用git@github.com:username/username.github.io.git的格式了，这个据说时传输数据的效率比https更高一些。
   4.如果后来又重新生成了一对密钥文件，并且把公钥的内容添加在github上之后，就要把这对密钥对应的私钥覆盖到~/.ssh目录下，这个是安装git时默认的路径，如果想修改git 使用的密钥文件的话，就要修改环境变量，不想麻烦的话，就把新生成的密钥文件改名覆盖原来的密钥对文件即可。
   ```
-
   
-
+  
+  
   
 

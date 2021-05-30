@@ -25,16 +25,13 @@ git checkout --orphan  branch-name  ----新建一个名称为branch-name的无�
 ```
 在删除分支时，先要确认一下要删除的分支不是当前分支，如果时当前分支的话是不能被删除的，可以使用git checkout branch-name来切换为非当前分支，然后再删除。
 git branch -d branch-name   ----删除本地的分支
-git branch -D branch-name   ----强制删除
 git push  origin --delete  branch-name ----删除远程仓库分支
-
 ```
 
 #### 分支重命名
 
 ```
 git branch -m old-name new-name 
-git branch -M old-name  new-name  大写的-M参数代表即使新的分支存在有重名。
 ```
 
 #### 分支的切换
@@ -42,4 +39,6 @@ git branch -M old-name  new-name  大写的-M参数代表即使新的分支存�
 ```
 git checkout branch-name 
 ```
+
+![img](/images/create-empty-branch-to-github.png)
 

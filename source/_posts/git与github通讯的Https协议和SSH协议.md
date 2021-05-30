@@ -16,7 +16,7 @@ tag:
 
   ```
   git clone https://github.com/username.gitbub.io.git 
-  git clone 命令是多个git命令的封装，相当与git init , git checkout -b username.github.io, git fetch这几个命令，可以把github仓库下载到本地新建立的的username.github.io目录
+  git clone 命令是多个git命令的封装，相当在本地新建立的username.github.io目录，再执行git init 纳入.git管理,自动建立一个master分支（git checkout -b master），自动添加远程连接git remote add origin https://github.com/username.gitbub.io.git，再 git fetch下载数据
   ```
 
   只是在每次都要输入用户名和邮箱，有点不方便，需要再使用git config  --global  user.name  "git用户名" 和git config --global  user.email "注册git时的邮箱"

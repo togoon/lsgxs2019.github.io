@@ -170,7 +170,7 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2021-05-30 09:58:45" itemprop="dateCreated datePublished" datetime="2021-05-30T09:58:45+00:00">2021-05-30</time>
+              <time title="创建时间：2021-05-30 10:24:10" itemprop="dateCreated datePublished" datetime="2021-05-30T10:24:10+00:00">2021-05-30</time>
             </span>
 
           
@@ -241,7 +241,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2021-05-30 00:00:00 / 修改时间：09:58:45" itemprop="dateCreated datePublished" datetime="2021-05-30T00:00:00+00:00">2021-05-30</time>
+              <time title="创建时间：2021-05-30 00:00:00 / 修改时间：10:24:10" itemprop="dateCreated datePublished" datetime="2021-05-30T00:00:00+00:00">2021-05-30</time>
             </span>
 
           
@@ -258,7 +258,7 @@
           <h2 id="git与github通讯的Https协议和SSH协议"><a href="#git与github通讯的Https协议和SSH协议" class="headerlink" title="git与github通讯的Https协议和SSH协议"></a>git与github通讯的Https协议和SSH协议</h2><p>在安装Git后，需要使用git命令与github仓库通讯，一般由两种协议实现与git与github仓库的通讯</p>
 <ul>
 <li><h2 id="https"><a href="#https" class="headerlink" title="https"></a>https</h2><p>如果刚刚接触git和github，使用https协议与github通讯比较容易上手，顺利实现各种git命令的操作。一般复制仓库的本地的git命令如下</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/username.gitbub.io.git </span><br><span class="line">git clone 命令是多个git命令的封装，相当与git init , git checkout -b username.github.io, git fetch这几个命令，可以把github仓库下载到本地新建立的的username.github.io目录</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/username.gitbub.io.git </span><br><span class="line">git clone 命令是多个git命令的封装，相当在本地新建立的username.github.io目录，再执行git init 纳入.git管理,自动建立一个master分支（git checkout -b master），自动添加远程连接git remote add origin https://github.com/username.gitbub.io.git，再 git fetch下载数据</span><br></pre></td></tr></table></figure>
 
 <p>只是在每次都要输入用户名和邮箱，有点不方便，需要再使用git config  –global  user.name  “git用户名” 和git config –global  user.email “注册git时的邮箱”</p>
 </li>
@@ -315,7 +315,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-05-30 09:58:45" itemprop="dateModified" datetime="2021-05-30T09:58:45+00:00">2021-05-30</time>
+                <time title="修改时间：2021-05-30 10:24:10" itemprop="dateModified" datetime="2021-05-30T10:24:10+00:00">2021-05-30</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -411,7 +411,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-05-30 09:58:45" itemprop="dateModified" datetime="2021-05-30T09:58:45+00:00">2021-05-30</time>
+                <time title="修改时间：2021-05-30 10:24:10" itemprop="dateModified" datetime="2021-05-30T10:24:10+00:00">2021-05-30</time>
               </span>
 
           
@@ -486,7 +486,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-05-30 09:58:45" itemprop="dateModified" datetime="2021-05-30T09:58:45+00:00">2021-05-30</time>
+                <time title="修改时间：2021-05-30 10:24:10" itemprop="dateModified" datetime="2021-05-30T10:24:10+00:00">2021-05-30</time>
               </span>
 
           
@@ -553,7 +553,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-05-30 09:58:45" itemprop="dateModified" datetime="2021-05-30T09:58:45+00:00">2021-05-30</time>
+                <time title="修改时间：2021-05-30 10:24:10" itemprop="dateModified" datetime="2021-05-30T10:24:10+00:00">2021-05-30</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -580,13 +580,11 @@
 
 <h4 id="新建分支"><a href="#新建分支" class="headerlink" title="新建分支"></a>新建分支</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git branch branch-name   ----新建一个名称为branch-name的分支</span><br><span class="line">git checkout --orphan  branch-name  ----新建一个名称为branch-name的无父节点的分支，并自动切换到该分支</span><br></pre></td></tr></table></figure>
 
+<h4 id="分支的删除"><a href="#分支的删除" class="headerlink" title="分支的删除"></a>分支的删除</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">在删除分支时，先要确认一下要删除的分支不是当前分支，如果时当前分支的话是不能被删除的，可以使用git checkout branch-name来切换为非当前分支，然后再删除。</span><br><span class="line">git branch -d branch-name   ----删除本地的分支</span><br><span class="line">git branch -D branch-name   ----强制删除</span><br><span class="line">git push  origin --delete  branch-name ----删除远程仓库分支</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h4 id="分支重命名"><a href="#分支重命名" class="headerlink" title="分支重命名"></a>分支重命名</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git branch -m old-name new-name </span><br><span class="line">git branch -M old-name  new-name  大写的-M参数代表即使新的分支存在有重名。</span><br></pre></td></tr></table></figure>
+
 <h4 id="分支的切换"><a href="#分支的切换" class="headerlink" title="分支的切换"></a>分支的切换</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout branch-name </span><br></pre></td></tr></table></figure>
-
-<h4 id="分支的删除"><a href="#分支的删除" class="headerlink" title="分支的删除"></a>分支的删除</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git branch -d branch-name   ----删除本地的分支</span><br><span class="line">git remote --delete  branch-name ------待核实，不确定准确写法</span><br></pre></td></tr></table></figure>
-
-<h4 id="分支的修改"><a href="#分支的修改" class="headerlink" title="分支的修改"></a>分支的修改</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rename   ----  待核实</span><br></pre></td></tr></table></figure>
-
-
 
 
       
@@ -638,7 +636,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-05-30 09:58:45" itemprop="dateModified" datetime="2021-05-30T09:58:45+00:00">2021-05-30</time>
+                <time title="修改时间：2021-05-30 10:24:10" itemprop="dateModified" datetime="2021-05-30T10:24:10+00:00">2021-05-30</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -735,7 +733,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-05-30 09:58:45" itemprop="dateModified" datetime="2021-05-30T09:58:45+00:00">2021-05-30</time>
+                <time title="修改时间：2021-05-30 10:24:10" itemprop="dateModified" datetime="2021-05-30T10:24:10+00:00">2021-05-30</time>
               </span>
 
           
@@ -816,7 +814,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-05-30 09:58:45" itemprop="dateModified" datetime="2021-05-30T09:58:45+00:00">2021-05-30</time>
+                <time title="修改时间：2021-05-30 10:24:10" itemprop="dateModified" datetime="2021-05-30T10:24:10+00:00">2021-05-30</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -919,7 +917,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-05-30 09:58:45" itemprop="dateModified" datetime="2021-05-30T09:58:45+00:00">2021-05-30</time>
+                <time title="修改时间：2021-05-30 10:24:10" itemprop="dateModified" datetime="2021-05-30T10:24:10+00:00">2021-05-30</time>
               </span>
 
           
@@ -994,7 +992,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-05-30 09:58:45" itemprop="dateModified" datetime="2021-05-30T09:58:45+00:00">2021-05-30</time>
+                <time title="修改时间：2021-05-30 10:24:10" itemprop="dateModified" datetime="2021-05-30T10:24:10+00:00">2021-05-30</time>
               </span>
 
           
@@ -1064,7 +1062,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-05-30 09:58:45" itemprop="dateModified" datetime="2021-05-30T09:58:45+00:00">2021-05-30</time>
+                <time title="修改时间：2021-05-30 10:24:10" itemprop="dateModified" datetime="2021-05-30T10:24:10+00:00">2021-05-30</time>
               </span>
 
           

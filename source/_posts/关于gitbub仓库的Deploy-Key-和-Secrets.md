@@ -6,7 +6,7 @@ toc: true
 
 ## 熟悉Github仓库权限的几个要素
 
-
+* SSh
 
 * Token 
 

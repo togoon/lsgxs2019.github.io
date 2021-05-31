@@ -4,15 +4,14 @@ date: 2021-05-31
 toc: true 
 ---
 
-
-
-##   Deploy key
-
+## 熟悉Github仓库权限的几个要素
 
 
 
+* Token 
+
+* Deploy key
 
 
-
-## Secrets
+* Secrets
 

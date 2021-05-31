@@ -1,6 +1,7 @@
 ---
 title: 关于hexo站点的资源文件存放
 date: 2021-05-30
+toc: true 
 ---
 
 ## Asset Folder in Hexo blog 
@@ -10,6 +11,10 @@ date: 2021-05-30
 ### Global Asset Folder
 
 Assets are non-post files in the `source` folder, such as images, CSS or JavaScript files. For instance, If you are only going to have a few images in the Hexo project, then the easiest way is to keep them in a `source/images` directory. Then, you can access them using something like `![](/images/image.jpg)`.
+
+可以把markdown撰写post时引用的图片文件保存在hexo项目的source/images目录下，在markdown编辑器里引用图片的格式为![img](/images/image-name.jpg or .png)
+
+
 
 ###  Post Asset Folder
 

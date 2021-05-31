@@ -1,15 +1,16 @@
 ---
 title: 安装Git之后的配置要点
 date: 2021-05-31
+toc: true 
 tag: 
   - git
 ---
 
-###  在本地计算机安装Git之后的配置
+###  在本地计算机安装Git之后，配置用户信息并添加SSH到github
 
-为操作github仓库，需要在下载git并安装在本地计算机，在使用git命令之前需要做两个准备工作
+为操作github仓库，需要在下载git并安装在本地计算机，具体操作有下面3个步骤
 
-* 配置用户和邮箱信息
+##  配置用户和邮箱信息
 
   ~~~
   git config --global user.name "github-username"
@@ -18,13 +19,12 @@ tag:
 
   
 
-* 使用ssh-keygen 生成SSH密钥对
+##  使用ssh-keygen 生成SSH密钥对
 
   ~~~
   ssh-keygen  -t rsa -C "${git config.user.email"  -----
   ~~~
-
-  在完成前面两个准备工作之后，就可以在github上保存刚刚生成的SSH。具体步骤如下：
+##  在github上保存刚刚生成的SSH。具体步骤如下：
 
   ```
   登录github账户，点击右上角的用户账户图标，选择弹出菜单的settting，在左侧的选项里选择SSH and GPG keys，下面的图一。最后在new sshkey界面的编辑框里粘贴ssh-keygen生成的公钥文件(.pub文件)的所有内容，最后保存，如下面图二。

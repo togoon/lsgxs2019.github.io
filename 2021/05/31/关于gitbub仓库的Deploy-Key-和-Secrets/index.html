@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"www.xianshansky.top","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="熟悉Github仓库权限的几个要素 SSh  Token   Deploy key   A deploy key is an SSH key that is stored on your server and grants access to a single GitHub repository. This key is attached directly to the repository in">
+  <meta name="description" content="熟悉Github仓库权限的几个要素 Token SSh Deploy key Deploy key 实际是一个限定在指定github仓库的的SSH,而不是作用域为整个github账户。     A deploy key is an SSH key that is stored on your server and grants access to a single GitHub repositor">
 <meta property="og:type" content="article">
 <meta property="og:title" content="关于gitbub仓库的Deploy Key 和 Secrets">
 <meta property="og:url" content="http://www.xianshansky.top/2021/05/31/%E5%85%B3%E4%BA%8Egitbub%E4%BB%93%E5%BA%93%E7%9A%84Deploy-Key-%E5%92%8C-Secrets/index.html">
 <meta property="og:site_name" content="test travis push">
-<meta property="og:description" content="熟悉Github仓库权限的几个要素 SSh  Token   Deploy key   A deploy key is an SSH key that is stored on your server and grants access to a single GitHub repository. This key is attached directly to the repository in">
+<meta property="og:description" content="熟悉Github仓库权限的几个要素 Token SSh Deploy key Deploy key 实际是一个限定在指定github仓库的的SSH,而不是作用域为整个github账户。     A deploy key is an SSH key that is stored on your server and grants access to a single GitHub repositor">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-05-31T00:00:00.000Z">
-<meta property="article:modified_time" content="2021-05-31T14:44:36.155Z">
+<meta property="article:modified_time" content="2021-05-31T15:02:03.851Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 
@@ -175,7 +175,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2021-05-31 00:00:00 / 修改时间：14:44:36" itemprop="dateCreated datePublished" datetime="2021-05-31T00:00:00+00:00">2021-05-31</time>
+              <time title="创建时间：2021-05-31 00:00:00 / 修改时间：15:02:03" itemprop="dateCreated datePublished" datetime="2021-05-31T00:00:00+00:00">2021-05-31</time>
             </span>
 
           
@@ -190,18 +190,19 @@
 
       
         <h2 id="熟悉Github仓库权限的几个要素"><a href="#熟悉Github仓库权限的几个要素" class="headerlink" title="熟悉Github仓库权限的几个要素"></a>熟悉Github仓库权限的几个要素</h2><ul>
-<li><p>SSh</p>
-</li>
-<li><p>Token </p>
-</li>
-<li><p>Deploy key</p>
-<ul>
-<li> A deploy key is an SSH key that is stored on your server and grants access to a single GitHub repository. This key is attached directly to the repository instead of to a personal user account.</li>
+<li>Token</li>
+<li>SSh</li>
+<li>Deploy key<ul>
+<li>Deploy key 实际是一个限定在指定github仓库的的SSH,而不是作用域为整个github账户。</li>
 </ul>
 </li>
 </ul>
+<p> A deploy key is an SSH key that is stored on your server and grants access to a single GitHub repository. This key is attached directly to the repository instead of to a personal user account.</p>
 <ul>
-<li>Secrets</li>
+<li>Secrets<ul>
+<li>这个也可以看做是用在github actios 里的token。一般是先生成一个token ,保存起来，然后把这token 添加在指定仓库的secrets里，在action里可以通过变量的形式引用。</li>
+</ul>
+</li>
 </ul>
 <p><em>Note that these tokens have <a target="_blank" rel="noopener" href="https://docs.github.com/en/actions/reference/authentication-in-a-workflow#permissions-for-the-github_token">specific permissions</a>, and that depending on what you want to do, you may need to create a <a target="_blank" rel="noopener" href="https://github.com/settings/tokens">Personal Access Token</a> (PAT) and add it as a secret (ex: ACCESS_TOKEN) to use in your workflow.</em></p>
 <ul>

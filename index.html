@@ -170,7 +170,7 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2021-05-31 13:08:19" itemprop="dateCreated datePublished" datetime="2021-05-31T13:08:19+00:00">2021-05-31</time>
+              <time title="创建时间：2021-05-31 13:19:37" itemprop="dateCreated datePublished" datetime="2021-05-31T13:19:37+00:00">2021-05-31</time>
             </span>
 
           
@@ -216,6 +216,64 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://www.xianshansky.top/2021/05/31/%E5%85%B3%E4%BA%8Egitbub%E4%BB%93%E5%BA%93%E7%9A%84Deploy-Key-%E5%92%8C-Secrets/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="test travis push">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/05/31/%E5%85%B3%E4%BA%8Egitbub%E4%BB%93%E5%BA%93%E7%9A%84Deploy-Key-%E5%92%8C-Secrets/" class="post-title-link" itemprop="url">关于gitbub仓库的Deploy Key 和 Secrets</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-05-31 00:00:00 / 修改时间：13:19:37" itemprop="dateCreated datePublished" datetime="2021-05-31T00:00:00+00:00">2021-05-31</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="Deploy-key"><a href="#Deploy-key" class="headerlink" title="Deploy key"></a>Deploy key</h2><h2 id="Secrets"><a href="#Secrets" class="headerlink" title="Secrets"></a>Secrets</h2>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://www.xianshansky.top/2021/05/31/%E5%AE%89%E8%A3%85Git%E4%B9%8B%E5%90%8E%E7%9A%84%E9%85%8D%E7%BD%AE%E8%A6%81%E7%82%B9/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -241,7 +299,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2021-05-31 00:00:00 / 修改时间：13:08:19" itemprop="dateCreated datePublished" datetime="2021-05-31T00:00:00+00:00">2021-05-31</time>
+              <time title="创建时间：2021-05-31 00:00:00 / 修改时间：13:19:37" itemprop="dateCreated datePublished" datetime="2021-05-31T00:00:00+00:00">2021-05-31</time>
             </span>
 
           
@@ -255,21 +313,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h3 id="在本地计算机安装Git之后的配置"><a href="#在本地计算机安装Git之后的配置" class="headerlink" title="在本地计算机安装Git之后的配置"></a>在本地计算机安装Git之后的配置</h3><p>为操作github仓库，需要在下载git并安装在本地计算机，在使用git命令之前需要做两个准备工作</p>
-<ul>
-<li><p>配置用户和邮箱信息</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;github-username&quot;</span><br><span class="line">git config --global user.email &quot;username@xx.com&quot;</span><br></pre></td></tr></table></figure></li>
-<li><p>使用ssh-keygen 生成SSH密钥对</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen  -t rsa -C &quot;$&#123;git config.user.email&quot;  -----</span><br></pre></td></tr></table></figure>
+          <h3 id="在本地计算机安装Git之后，配置用户信息并添加SSH到github"><a href="#在本地计算机安装Git之后，配置用户信息并添加SSH到github" class="headerlink" title="在本地计算机安装Git之后，配置用户信息并添加SSH到github"></a>在本地计算机安装Git之后，配置用户信息并添加SSH到github</h3><p>为操作github仓库，需要在下载git并安装在本地计算机，具体操作有下面3个步骤</p>
+<h2 id="配置用户和邮箱信息"><a href="#配置用户和邮箱信息" class="headerlink" title="配置用户和邮箱信息"></a>配置用户和邮箱信息</h2>  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;github-username&quot;</span><br><span class="line">git config --global user.email &quot;username@xx.com&quot;</span><br></pre></td></tr></table></figure>
 
-<p>在完成前面两个准备工作之后，就可以在github上保存刚刚生成的SSH。具体步骤如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">登录github账户，点击右上角的用户账户图标，选择弹出菜单的settting，在左侧的选项里选择SSH and GPG keys，下面的图一。最后在new sshkey界面的编辑框里粘贴ssh-keygen生成的公钥文件(.pub文件)的所有内容，最后保存，如下面图二。</span><br><span class="line">备注： clip &lt; id_rsa.pub   这个命令可以把公钥文件的所有内容输出到剪贴板，在需要的地方粘贴即可。</span><br></pre></td></tr></table></figure>
+<h2 id="使用ssh-keygen-生成SSH密钥对"><a href="#使用ssh-keygen-生成SSH密钥对" class="headerlink" title="使用ssh-keygen 生成SSH密钥对"></a>使用ssh-keygen 生成SSH密钥对</h2>  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen  -t rsa -C &quot;$&#123;git config.user.email&quot;  -----</span><br></pre></td></tr></table></figure>
+<h2 id="在github上保存刚刚生成的SSH。具体步骤如下："><a href="#在github上保存刚刚生成的SSH。具体步骤如下：" class="headerlink" title="在github上保存刚刚生成的SSH。具体步骤如下："></a>在github上保存刚刚生成的SSH。具体步骤如下：</h2>  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">登录github账户，点击右上角的用户账户图标，选择弹出菜单的settting，在左侧的选项里选择SSH and GPG keys，下面的图一。最后在new sshkey界面的编辑框里粘贴ssh-keygen生成的公钥文件(.pub文件)的所有内容，最后保存，如下面图二。</span><br><span class="line">备注： clip &lt; id_rsa.pub   这个命令可以把公钥文件的所有内容输出到剪贴板，在需要的地方粘贴即可。</span><br></pre></td></tr></table></figure>
 
-<p>图一：</p>
-<p><img src="/images/github-new-ssh.png" alt="image"></p>
-<p>图二</p>
-</li>
-</ul>
+<p>  图一：</p>
+<p>  <img src="/images/github-new-ssh.png" alt="image"></p>
+<p>  图二</p>
 <p> <img src="/images/ssh-key-new.png" alt="img"></p>
 
       
@@ -321,7 +373,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-05-31 13:08:19" itemprop="dateModified" datetime="2021-05-31T13:08:19+00:00">2021-05-31</time>
+                <time title="修改时间：2021-05-31 13:19:37" itemprop="dateModified" datetime="2021-05-31T13:19:37+00:00">2021-05-31</time>
               </span>
 
           
@@ -395,7 +447,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-05-31 13:08:19" itemprop="dateModified" datetime="2021-05-31T13:08:19+00:00">2021-05-31</time>
+                <time title="修改时间：2021-05-31 13:19:37" itemprop="dateModified" datetime="2021-05-31T13:19:37+00:00">2021-05-31</time>
               </span>
 
           
@@ -410,6 +462,7 @@
 
       
           <h2 id="Asset-Folder-in-Hexo-blog"><a href="#Asset-Folder-in-Hexo-blog" class="headerlink" title="Asset Folder in Hexo blog"></a>Asset Folder in Hexo blog</h2><h3 id="Global-Asset-Folder"><a href="#Global-Asset-Folder" class="headerlink" title="Global Asset Folder"></a>Global Asset Folder</h3><p>Assets are non-post files in the <code>source</code> folder, such as images, CSS or JavaScript files. For instance, If you are only going to have a few images in the Hexo project, then the easiest way is to keep them in a <code>source/images</code> directory. Then, you can access them using something like <code>![](/images/image.jpg)</code>.</p>
+<p>可以把markdown撰写post时引用的图片文件保存在hexo项目的source/images目录下，在markdown编辑器里引用图片的格式为![img](/images/image-name.jpg or .png)</p>
 <h3 id="Post-Asset-Folder"><a href="#Post-Asset-Folder" class="headerlink" title="Post Asset Folder"></a>Post Asset Folder</h3><iframe src="https://www.youtube.com/embed/feIDVQ2tz0o" frameborder="0" loading="lazy" allowfullscreen="" style="box-sizing: inherit; margin: 1em 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; font-size: 15px; vertical-align: baseline;"></iframe>
 
 <p>For users who expect to regularly serve images and/or other assets, and for those who prefer to separate their assets on a post-per-post basis, Hexo also provides a more organized way to manage assets. This slightly more involved, but very convenient approach to asset management can be turned on by setting the <code>post_asset_folder</code> setting in <code>_config.yml</code> to true.</p>
@@ -466,7 +519,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-05-31 13:08:19" itemprop="dateModified" datetime="2021-05-31T13:08:19+00:00">2021-05-31</time>
+                <time title="修改时间：2021-05-31 13:19:37" itemprop="dateModified" datetime="2021-05-31T13:19:37+00:00">2021-05-31</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -562,7 +615,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-05-31 13:08:19" itemprop="dateModified" datetime="2021-05-31T13:08:19+00:00">2021-05-31</time>
+                <time title="修改时间：2021-05-31 13:19:37" itemprop="dateModified" datetime="2021-05-31T13:19:37+00:00">2021-05-31</time>
               </span>
 
           
@@ -637,7 +690,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-05-31 13:08:19" itemprop="dateModified" datetime="2021-05-31T13:08:19+00:00">2021-05-31</time>
+                <time title="修改时间：2021-05-31 13:19:37" itemprop="dateModified" datetime="2021-05-31T13:19:37+00:00">2021-05-31</time>
               </span>
 
           
@@ -704,7 +757,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-05-31 13:08:19" itemprop="dateModified" datetime="2021-05-31T13:08:19+00:00">2021-05-31</time>
+                <time title="修改时间：2021-05-31 13:19:37" itemprop="dateModified" datetime="2021-05-31T13:19:37+00:00">2021-05-31</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -788,7 +841,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-05-31 13:08:19" itemprop="dateModified" datetime="2021-05-31T13:08:19+00:00">2021-05-31</time>
+                <time title="修改时间：2021-05-31 13:19:37" itemprop="dateModified" datetime="2021-05-31T13:19:37+00:00">2021-05-31</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -885,7 +938,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-05-31 13:08:19" itemprop="dateModified" datetime="2021-05-31T13:08:19+00:00">2021-05-31</time>
+                <time title="修改时间：2021-05-31 13:19:37" itemprop="dateModified" datetime="2021-05-31T13:19:37+00:00">2021-05-31</time>
               </span>
 
           
@@ -966,7 +1019,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-05-31 13:08:19" itemprop="dateModified" datetime="2021-05-31T13:08:19+00:00">2021-05-31</time>
+                <time title="修改时间：2021-05-31 13:19:37" itemprop="dateModified" datetime="2021-05-31T13:19:37+00:00">2021-05-31</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -1019,81 +1072,6 @@
 
 <p>具体执行过程见下面的图片</p>
 <p><img src="/images/hexo/create-empty-branch-to-github.jpg" alt="img"></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://www.xianshansky.top/2021/05/24/%E5%A6%82%E4%BD%95%E9%80%9A%E8%BF%87dns%E6%9F%A5%E8%AF%A2%E5%88%B0%E7%9B%AE%E6%A0%87%E7%BD%91%E9%A1%B5/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="test travis push">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/05/24/%E5%A6%82%E4%BD%95%E9%80%9A%E8%BF%87dns%E6%9F%A5%E8%AF%A2%E5%88%B0%E7%9B%AE%E6%A0%87%E7%BD%91%E9%A1%B5/" class="post-title-link" itemprop="url">如何通过dns查询到目标网页</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-05-24 00:00:00" itemprop="dateCreated datePublished" datetime="2021-05-24T00:00:00+00:00">2021-05-24</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-05-31 13:08:19" itemprop="dateModified" datetime="2021-05-31T13:08:19+00:00">2021-05-31</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <ul>
-<li><p>域名的层次结构</p>
-<p>以<a target="_blank" rel="noopener" href="http://www.example.com为例子说明域名的层级结构.其中的.com部分叫做顶级域名/">www.example.com为例子说明域名的层级结构。其中的.com部分叫做顶级域名</a>(top-level domain)，.example部分为次级域名，www为主机部分。实际上在顶级域名之上还有一个层级叫做根域名root，因为完整的域名应该如下图所示：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">主机.次级域名.顶级域名.根域名</span><br><span class="line">hostname.sld.tld.root</span><br><span class="line">www.example.www.root</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>现有的根域名，是由一个叫做 <a target="_blank" rel="noopener" href="https://www.icann.org/">ICANN</a> （Internet Corporation for Assigned Names and Numbers）的组织管理，总部在美国。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">   这个组织维护这13个根域名列表。早期的 DNS 查询结果是一个512字节的 UDP 数据包。这个包最多可以容纳13个服务器的地址，因此就规定全世界有13个根域名服务器，编号从a.root-servers.net一直到m.root-servers.net。这13台根域名服务器由12个组织独立运营。其中，Verisign 公司管理两台根域名服务器：A 和 J。每家公司为了保证根域名服务器的可用性，会部署多个节点，比如单单 Verisign 一家公司就部署了104台根域名服务器（2016年1月数据）。所以，根域名服务器其实[不止13台](https://www.icann.org/news/blog/there-are-not-13-root-servers)。据统计，截止2016年1月，全世界共有 517 台根域名服务器。你可以在 http://root-servers.org 这个网站查到所有根域名服务器的信息。根域名服务器虽然有域名，但是最少必须知道一台的 IP 地址，否则就会陷入循环查询。一般来说，本机都保存一份根域名服务器的 IP 地址的缓存，叫做 [name.cache](https://www.internic.net/zones/named.cache) 文件</span><br><span class="line">  </span><br><span class="line">  由于根域名是固定的，因此，在日常的域名书写中省去了根域名部分：www.example.www</span><br><span class="line"></span><br><span class="line">* 域名是如何查询的</span><br><span class="line"></span><br><span class="line">  根据域名的层级结构特性，在本地dns服务区默认保存根域名服务器的地址，从根域名开始，采用自上而下的分层查询方法，逐级查询最终得到目标网页。</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>查询根域名列表，得到顶级域名服务器的NS记录和A记录   (ip地址)<br>查询顶级域名服务器，得到次级域名服务器的NS记录和A记录 (ip地址)<br>查询次级域名服务器地址，得到最终主机的Ip地址</p>
-<p>每个层级域名都有自己的NS记录，这些记录指向本级的域名服务器，本级的域名服务器保存着下一级域名的NS记录，如此，就形成了一个链表式的查询路径。<br>层级域名 -&gt; 本级NS记录-&gt;本级域名服务器-&gt;下一级域名的NS记录-&gt;本级域名服务器<br>```</p>
-</li>
-</ul>
 
       
     </div>
@@ -1178,7 +1156,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">20</span>
+          <span class="site-state-item-count">21</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>

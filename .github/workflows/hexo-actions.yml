@@ -45,7 +45,7 @@ jobs:
         
     - name: Deploy To Github Pages 
       env:
-        Github_Pages: ${{ secrets.MY_GITHUB.IO}}
+        Github_Pages: ${{ secrets.MY_GITHUB.IO }}
         Github_Token: ${{ secrets.token_GithubAPI }}
       run: |  
         git clone https://${Github_Pages} .github_pages

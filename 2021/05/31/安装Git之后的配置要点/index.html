@@ -29,7 +29,8 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 
@@ -469,11 +470,14 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h3 id="在本地计算机安装Git之后，配置用户信息并添加SSH到github"><a href="#在本地计算机安装Git之后，配置用户信息并添加SSH到github" class="headerlink" title="在本地计算机安装Git之后，配置用户信息并添加SSH到github"></a>在本地计算机安装Git之后，配置用户信息并添加SSH到github</h3><p>为操作github仓库，需要在下载git并安装在本地计算机，具体操作有下面3个步骤</p>
-<h2 id="配置用户和邮箱信息"><a href="#配置用户和邮箱信息" class="headerlink" title="配置用户和邮箱信息"></a>配置用户和邮箱信息</h2>  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;github-username&quot;</span><br><span class="line">git config --global user.email &quot;username@xx.com&quot;</span><br></pre></td></tr></table></figure>
-
-<h2 id="使用ssh-keygen-生成SSH密钥对"><a href="#使用ssh-keygen-生成SSH密钥对" class="headerlink" title="使用ssh-keygen 生成SSH密钥对"></a>使用ssh-keygen 生成SSH密钥对</h2>  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen  -t rsa -C &quot;$&#123;git config.user.email&quot;  -----</span><br></pre></td></tr></table></figure>
-<h2 id="在github上保存刚刚生成的SSH。具体步骤如下："><a href="#在github上保存刚刚生成的SSH。具体步骤如下：" class="headerlink" title="在github上保存刚刚生成的SSH。具体步骤如下："></a>在github上保存刚刚生成的SSH。具体步骤如下：</h2>  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">登录github账户，点击右上角的用户账户图标，选择弹出菜单的settting，在左侧的选项里选择SSH and GPG keys，下面的图一。最后在new sshkey界面的编辑框里粘贴ssh-keygen生成的公钥文件(.pub文件)的所有内容，最后保存，如下面图二。</span><br><span class="line">备注： clip &lt; id_rsa.pub   这个命令可以把公钥文件的所有内容输出到剪贴板，在需要的地方粘贴即可。</span><br></pre></td></tr></table></figure>
-
+<h2 id="配置用户和邮箱信息"><a href="#配置用户和邮箱信息" class="headerlink" title="配置用户和邮箱信息"></a>配置用户和邮箱信息</h2><pre><code>  git config --global user.name &quot;github-username&quot;
+  git config --global user.email &quot;username@xx.com&quot;
+</code></pre>
+<h2 id="使用ssh-keygen-生成SSH密钥对"><a href="#使用ssh-keygen-生成SSH密钥对" class="headerlink" title="使用ssh-keygen 生成SSH密钥对"></a>使用ssh-keygen 生成SSH密钥对</h2><pre><code>  ssh-keygen  -t rsa -C &quot;$&#123;git config.user.email&quot;  -----
+</code></pre>
+<h2 id="在github上保存刚刚生成的SSH。具体步骤如下："><a href="#在github上保存刚刚生成的SSH。具体步骤如下：" class="headerlink" title="在github上保存刚刚生成的SSH。具体步骤如下："></a>在github上保存刚刚生成的SSH。具体步骤如下：</h2><pre><code>登录github账户，点击右上角的用户账户图标，选择弹出菜单的settting，在左侧的选项里选择SSH and GPG keys，下面的图一。最后在new sshkey界面的编辑框里粘贴ssh-keygen生成的公钥文件(.pub文件)的所有内容，最后保存，如下面图二。
+备注： clip &lt; id_rsa.pub   这个命令可以把公钥文件的所有内容输出到剪贴板，在需要的地方粘贴即可。
+</code></pre>
 <p>  图一：</p>
 <p>  <img src="/images/github-new-ssh.png" alt="image"></p>
 <p>  图二</p>

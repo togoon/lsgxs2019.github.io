@@ -29,7 +29,8 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 
@@ -476,44 +477,57 @@
 <li><p>hexo init</p>
 </li>
 </ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init &lt;folder&gt;</span><br><span class="line">$ cd &lt;folder&gt;</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
-
+<pre><code>$ hexo init &lt;folder&gt;
+$ cd &lt;folder&gt;
+$ npm install
+</code></pre>
 <ul>
 <li><p> Configuration   _config.yml</p>
 </li>
 <li><p>write post</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new  &lt;title&gt;</span><br></pre></td></tr></table></figure></li>
+<pre><code>hexo new  &lt;title&gt;
+</code></pre>
+</li>
 <li><p>generate</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generat or hexo g</span><br></pre></td></tr></table></figure></li>
+<pre><code>hexo generat or hexo g
+</code></pre>
+</li>
 <li><p>server </p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure></li>
+<pre><code>hexo server
+</code></pre>
+</li>
 <li><p>deploy</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">本地浏览 localhost:4000</span><br><span class="line">部署到github.com :hexo deploy  or hexo d</span><br><span class="line"> </span><br></pre></td></tr></table></figure>
-
+<pre><code>本地浏览 localhost:4000
+部署到github.com :hexo deploy  or hexo d
+ 
+</code></pre>
 <p>重新修改post之后</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">hexo clean  （删除db.json数据库和由generate生成的保存html文件的public目录）</span><br><span class="line">hexo generate （重新把source目录下的md文档生成每个文件夹下的index.html文件，这些文件夹都是以年月日建立的目录树，所有要发布的内容保存在public目录下）</span><br><span class="line">hexo server </span><br><span class="line">localhost:4000   </span><br><span class="line">hexo deploy  （一般要执行hexo deploy 或者hexo d,hexo deploye时， 是先清空.deploy_git目录，然后从public目录所有内容复制到到.deploy_git目录，按照_config.yml里设置的deploye参数push到远程仓库。如果自己手动在git bash 命令窗口下使用git 命令push到远程的仓库，需要推送的是public目录，而不是项目目录。如果没有完整的项目文件，可以直接使用git clone把远程仓库的所有内容clone到本地，修改之后在再直接push到远程，不过一不推荐这个方式，容易出错，只是通过这种方式熟悉hexo的工作流程。hexo必须把markdown文件在本地转换成html再上传到github，而github对jekyll的支持，可以直接push本地的markdown文件到github仓库，由github提供的服务把markdown转换为html。</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
+<pre><code>hexo clean  （删除db.json数据库和由generate生成的保存html文件的public目录）
+hexo generate （重新把source目录下的md文档生成每个文件夹下的index.html文件，这些文件夹都是以年月日建立的目录树，所有要发布的内容保存在public目录下）
+hexo server 
+localhost:4000   
+hexo deploy  （一般要执行hexo deploy 或者hexo d,hexo deploye时， 是先清空.deploy_git目录，然后从public目录所有内容复制到到.deploy_git目录，按照_config.yml里设置的deploye参数push到远程仓库。如果自己手动在git bash 命令窗口下使用git 命令push到远程的仓库，需要推送的是public目录，而不是项目目录。如果没有完整的项目文件，可以直接使用git clone把远程仓库的所有内容clone到本地，修改之后在再直接push到远程，不过一不推荐这个方式，容易出错，只是通过这种方式熟悉hexo的工作流程。hexo必须把markdown文件在本地转换成html再上传到github，而github对jekyll的支持，可以直接push本地的markdown文件到github仓库，由github提供的服务把markdown转换为html。
+</code></pre>
 <p>这里的图片引用使用域名+站点目录的形式</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">![img](https://customedns\images\xxx.jpg)</span><br><span class="line">想在markdown文档中引用图片，可以把图片保存在站点根目录的images目录下。需要在运行hexo generate命令之后，把图片复制到生成的public\images目录下，然后由hexo deply把public目录复制到.deploy_git目录，git上传到到username.github.io站点根目录下</span><br></pre></td></tr></table></figure>
-
-
-
+<pre><code>![img](https://customedns\images\xxx.jpg)
+想在markdown文档中引用图片，可以把图片保存在站点根目录的images目录下。需要在运行hexo generate命令之后，把图片复制到生成的public\images目录下，然后由hexo deply把public目录复制到.deploy_git目录，git上传到到username.github.io站点根目录下
+</code></pre>
 <p><img src="https://www.xianshansky.top/images/after-hexo-deploy-repo-local.jpg" alt="img"></p>
 </li>
 </ul>
 <p><img src="https://www.xianshansky.top/images/after-hexo-deploy-repo.jpg" alt="img"></p>
 <p><img src="https://www.xianshansky.top/images/hexo-deploy.jpg" alt="img"></p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo server
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo generate
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo deploy
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 
                 

@@ -29,7 +29,8 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 
@@ -469,8 +470,11 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h4 id="gitshub仓库分支重命名"><a href="#gitshub仓库分支重命名" class="headerlink" title="gitshub仓库分支重命名"></a>gitshub仓库分支重命名</h4><p>在github仓库的分支操作界面改名之后，会提示在本地仓库运行下面的命令</p>
-<figure class="highlight plaintext"><figcaption><span>branch -m hexo-source source</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git branch -m hexo-source source</span><br><span class="line">git fetch origin</span><br><span class="line">git branch -u origin/source source</span><br><span class="line">git remote set-head origin -a</span><br></pre></td></tr></table></figure>
-
+<pre class="line-numbers language-git"><code class="language-git">git branch -m hexo-source source
+git fetch origin
+git branch -u origin/source source
+git remote set-head origin -a
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
                 
             </div>

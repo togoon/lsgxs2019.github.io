@@ -29,7 +29,8 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 
@@ -469,8 +470,8 @@
 <h3 id="Post-Asset-Folder"><a href="#Post-Asset-Folder" class="headerlink" title="Post Asset Folder"></a>Post Asset Folder</h3><iframe src="https://www.youtube.com/embed/feIDVQ2tz0o" frameborder="0" loading="lazy" allowfullscreen="" style="box-sizing: inherit; margin: 1em 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; font-size: 15px; vertical-align: baseline;"></iframe>
 
 <p>For users who expect to regularly serve images and/or other assets, and for those who prefer to separate their assets on a post-per-post basis, Hexo also provides a more organized way to manage assets. This slightly more involved, but very convenient approach to asset management can be turned on by setting the <code>post_asset_folder</code> setting in <code>_config.yml</code> to true.</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">_config.ymlpost_asset_folder: true</span><br></pre></td></tr></table></figure>
-
+<pre><code>_config.ymlpost_asset_folder: true
+</code></pre>
 <p>With asset folder management enabled, Hexo will create a folder every time you make a new post with the <code>hexo new [layout] &lt;title&gt;</code> command. This asset folder will have the same name as the markdown file associated with the post. Place all assets related to your post into the associated folder, and you will be able to reference them using a relative path, making for an easier and more convenient workflow.</p>
 
                 

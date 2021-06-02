@@ -29,7 +29,8 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 
@@ -477,16 +478,20 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="分支的查询"><a href="#分支的查询" class="headerlink" title="分支的查询"></a>分支的查询</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git  branch   ----查询当前分支</span><br><span class="line">git branch -a ----查询所有分支</span><br></pre></td></tr></table></figure>
-
-<h4 id="新建分支"><a href="#新建分支" class="headerlink" title="新建分支"></a>新建分支</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git branch branch-name   ----新建一个名称为branch-name的分支</span><br><span class="line">git checkout --orphan  branch-name  ----新建一个名称为branch-name的无父节点的分支，并自动切换到该分支</span><br></pre></td></tr></table></figure>
-
-<h4 id="分支的删除"><a href="#分支的删除" class="headerlink" title="分支的删除"></a>分支的删除</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">在删除分支时，先要确认一下要删除的分支不是当前分支，如果时当前分支的话是不能被删除的，可以使用git checkout branch-name来切换为非当前分支，然后再删除。</span><br><span class="line">git branch -d branch-name   ----删除本地的分支</span><br><span class="line">git push  origin --delete  branch-name ----删除远程仓库分支</span><br></pre></td></tr></table></figure>
-
-<h4 id="分支重命名"><a href="#分支重命名" class="headerlink" title="分支重命名"></a>分支重命名</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch -m old-name new-name </span><br></pre></td></tr></table></figure>
-
-<h4 id="分支的切换"><a href="#分支的切换" class="headerlink" title="分支的切换"></a>分支的切换</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout branch-name </span><br></pre></td></tr></table></figure>
-
+                <h4 id="分支的查询"><a href="#分支的查询" class="headerlink" title="分支的查询"></a>分支的查询</h4><pre><code>git  branch   ----查询当前分支
+git branch -a ----查询所有分支
+</code></pre>
+<h4 id="新建分支"><a href="#新建分支" class="headerlink" title="新建分支"></a>新建分支</h4><pre><code>git branch branch-name   ----新建一个名称为branch-name的分支
+git checkout --orphan  branch-name  ----新建一个名称为branch-name的无父节点的分支，并自动切换到该分支
+</code></pre>
+<h4 id="分支的删除"><a href="#分支的删除" class="headerlink" title="分支的删除"></a>分支的删除</h4><pre><code>在删除分支时，先要确认一下要删除的分支不是当前分支，如果时当前分支的话是不能被删除的，可以使用git checkout branch-name来切换为非当前分支，然后再删除。
+git branch -d branch-name   ----删除本地的分支
+git push  origin --delete  branch-name ----删除远程仓库分支
+</code></pre>
+<h4 id="分支重命名"><a href="#分支重命名" class="headerlink" title="分支重命名"></a>分支重命名</h4><pre><code>git branch -m old-name new-name 
+</code></pre>
+<h4 id="分支的切换"><a href="#分支的切换" class="headerlink" title="分支的切换"></a>分支的切换</h4><pre><code>git checkout branch-name 
+</code></pre>
 <p><img src="/images/create-empty-branch-to-github.png" alt="img"></p>
 
                 

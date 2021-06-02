@@ -29,7 +29,8 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 
@@ -503,10 +504,23 @@
 <p><img src="https://www.xianshansky.top/img/hexo/configfile.jpg" alt="img"></p>
 <ul>
 <li><p>下载并应用主题（Themes）</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ cd your-hexo-site</span><br><span class="line">$ git clone https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
-
+<pre><code>$ cd your-hexo-site
+$ git clone https://github.com/iissnan/hexo-theme-next themes/next
+</code></pre>
 <p>themes目录下的next目录，就是下载的next主题，还需要在设置_config.yml文件应用next主题：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"># Extensions</span><br><span class="line">## Plugins: https://hexo.io/plugins/</span><br><span class="line">## Themes: https://hexo.io/themes/</span><br><span class="line">theme: next</span><br><span class="line"></span><br><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">type: git</span><br><span class="line">repo: git@github.com:username/username.github.io.git</span><br><span class="line">branch: master</span><br></pre></td></tr></table></figure></li>
+<pre><code># Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: next
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+type: git
+repo: git@github.com:username/username.github.io.git
+branch: master
+</code></pre>
+</li>
 <li><p>编辑hexo项目的配置文件_config.yml</p>
 </li>
 <li><p>使用Typora建立你的博客文档，保存在项目的/sourece/_posts目录下</p>
@@ -516,15 +530,17 @@
 <li><p>install hexo-deployer-gt</p>
 <ul>
 <li><pre><code>npm install hexo-deployer-git --save
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">* add the following configuration to _config.yml</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-deploy:
-type: git
-repo: &lt;repository url&gt; # https://github.com/username/username.github.io
-branch: [branch]
-message: [message]
 </code></pre>
 </li>
 </ul>
+</li>
+<li><p>add the following configuration to _config.yml</p>
+<pre><code>deploy:
+  type: git
+  repo: &lt;repository url&gt; # https://github.com/username/username.github.io
+  branch: [branch]
+  message: [message]
+</code></pre>
 </li>
 </ul>
 </li>

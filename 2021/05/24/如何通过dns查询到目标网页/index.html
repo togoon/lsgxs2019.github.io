@@ -600,10 +600,10 @@
                 <ul>
 <li><p>域名的层次结构</p>
 <p>以<a target="_blank" rel="noopener" href="http://www.example.com为例子说明域名的层级结构.其中的.com部分叫做顶级域名/">www.example.com为例子说明域名的层级结构。其中的.com部分叫做顶级域名</a>(top-level domain)，.example部分为次级域名，www为主机部分。实际上在顶级域名之上还有一个层级叫做根域名root，因为完整的域名应该如下图所示：</p>
-<pre><code>主机.次级域名.顶级域名.根域名
+<pre class="line-numbers language-markdown"><code class="language-markdown">主机.次级域名.顶级域名.根域名
 hostname.sld.tld.root
 www.example.www.root
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p>现有的根域名，是由一个叫做 <a target="_blank" rel="noopener" href="https://www.icann.org/">ICANN</a> （Internet Corporation for Assigned Names and Numbers）的组织管理，总部在美国。</p>
 <p>```markdown<br> 这个组织维护这13个根域名列表。早期的 DNS 查询结果是一个512字节的 UDP 数据包。这个包最多可以容纳13个服务器的地址，因此就规定全世界有13个根域名服务器，编号从a.root-servers.net一直到m.root-servers.net。这13台根域名服务器由12个组织独立运营。其中，Verisign 公司管理两台根域名服务器：A 和 J。每家公司为了保证根域名服务器的可用性，会部署多个节点，比如单单 Verisign 一家公司就部署了104台根域名服务器（2016年1月数据）。所以，根域名服务器其实<a target="_blank" rel="noopener" href="https://www.icann.org/news/blog/there-are-not-13-root-servers">不止13台</a>。据统计，截止2016年1月，全世界共有 517 台根域名服务器。你可以在 <a target="_blank" rel="noopener" href="http://root-servers.org/">http://root-servers.org</a> 这个网站查到所有根域名服务器的信息。根域名服务器虽然有域名，但是最少必须知道一台的 IP 地址，否则就会陷入循环查询。一般来说，本机都保存一份根域名服务器的 IP 地址的缓存，叫做 <a target="_blank" rel="noopener" href="https://www.internic.net/zones/named.cache">name.cache</a> 文件</p>
 <p>由于根域名是固定的，因此，在日常的域名书写中省去了根域名部分：<a target="_blank" rel="noopener" href="http://www.example.www/">www.example.www</a></p>

@@ -47,7 +47,7 @@ tags: github
   * 安装jekyll
   * 安装gem  ，gem相当于是ruby的包管理器，而jekyll就是ruby的一个应用包。关于gem ：RubyGems is a package management framework for Ruby.这是官方的描述。
 
-```
+```markdown
 Jekyll requires the following:
 
 Ruby version 2.4.0 or higher
@@ -75,7 +75,7 @@ Instructions
 
 * 使用Markdown文本编辑器Typora在本地仓库_posts目录下编辑你博客文档，记得在markdown文档的最前边填写Jekyll出路文档的元数据，格式如下：
 
-  ```
+  ```markdown
   ---
   layout: post
   title: 使用Jekyll在GitHub上写博客

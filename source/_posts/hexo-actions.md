@@ -8,7 +8,7 @@ tag: actions
 
 * actions-1
 
-```
+```yaml
 name: Main workflow
 
 on:
@@ -57,7 +57,7 @@ jobs:
 
 * atcion-2
 
-  ```
+  ```yaml
   name: CI
   on:
   push:

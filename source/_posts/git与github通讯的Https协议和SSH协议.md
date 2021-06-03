@@ -14,7 +14,7 @@ tag:
 
   如果刚刚接触git和github，使用https协议与github通讯比较容易上手，顺利实现各种git命令的操作。一般复制仓库的本地的git命令如下
 
-  ```
+  ```bash
   git clone https://github.com/username.gitbub.io.git 
   git clone 命令是多个git命令的封装，相当在本地新建立的username.github.io目录，再执行git init 纳入.git管理,自动建立一个master分支（git checkout -b master），自动添加远程连接git remote add origin https://github.com/username.gitbub.io.git，再 git fetch下载数据
   ```
@@ -25,7 +25,7 @@ tag:
 
   SSH的全称时Secure Shell,通过一对加密的密钥来实现客户端和服务器的通讯。在 Git Bash 命令行窗口下，使用以下命令来生成SSH密钥
 
-  ```
+  ```bash
   1.ssh-keygen  -t rsa  -C "username.com--这里是密钥的注释，一般使用邮箱可说明它的用途"
   这里的-t rsa 参数知名密钥类型为rsa，-C 为注释。也可以再加上-f filename来指定密钥的文件名称。
   在安装git之后，使用这个命令可在默认的路径下生成id_rsa.pub和id_rsa这两个公钥和私钥文件，一般要查询他的路劲，可在git bash 命令行下输入下面的命令：

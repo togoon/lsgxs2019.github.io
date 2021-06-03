@@ -12,7 +12,7 @@ tag:
 
 在github仓库的分支操作界面改名之后，会提示在本地仓库运行下面的命令
 
-```git branch -m hexo-source source
+```bash
 git branch -m hexo-source source
 git fetch origin
 git branch -u origin/source source

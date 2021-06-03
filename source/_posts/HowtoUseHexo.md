@@ -9,7 +9,7 @@ tags:  hexo
 
 * hexo init
 
-```
+```bash
 $ hexo init <folder>
 $ cd <folder>
 $ npm install
@@ -19,25 +19,25 @@ $ npm install
 
 * write post
 
-  ```
+  ```bash
   hexo new  <title>
   ```
 
 * generate
 
-  ```
+  ```bash
   hexo generat or hexo g
   ```
 
 * server 
 
-  ```
+  ```bash
   hexo server
   ```
 
 * deploy
 
-  ```
+  ```bash
   本地浏览 localhost:4000
   部署到github.com :hexo deploy  or hexo d
    
@@ -45,7 +45,7 @@ $ npm install
 
   重新修改post之后
 
-  ```
+  ```bash
   hexo clean  （删除db.json数据库和由generate生成的保存html文件的public目录）
   hexo generate （重新把source目录下的md文档生成每个文件夹下的index.html文件，这些文件夹都是以年月日建立的目录树，所有要发布的内容保存在public目录下）
   hexo server 
@@ -56,7 +56,7 @@ $ npm install
 
   这里的图片引用使用域名+站点目录的形式
 
-  ```
+  ```markdown
   ![img](https://customedns\images\xxx.jpg)
   想在markdown文档中引用图片，可以把图片保存在站点根目录的images目录下。需要在运行hexo generate命令之后，把图片复制到生成的public\images目录下，然后由hexo deply把public目录复制到.deploy_git目录，git上传到到username.github.io站点根目录下
   ```

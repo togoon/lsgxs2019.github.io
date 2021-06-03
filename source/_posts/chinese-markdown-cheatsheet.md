@@ -14,7 +14,7 @@ Markdown语法的完整介绍在这里：<http://daringfireball.net/projects/mar
 
 ### 标题
 
-```
+```markdown
 This is an H1
 =============
 
@@ -33,7 +33,7 @@ This is an H2
 
 在每一行前面写一个`>`：
 
-```
+```markdown
 > This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
 > consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
 > Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
@@ -51,7 +51,7 @@ This is an H2
 
 或者在每一段前面写一个`>`：
 
-```
+```markdown
 > This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
 consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
 Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
@@ -63,7 +63,7 @@ id sem consectetuer libero luctus adipiscing.
 
 ### 多重引用
 
-```
+```markdown
 > This is the first level of quoting.
 >
 > > This is nested blockquote.
@@ -84,7 +84,7 @@ id sem consectetuer libero luctus adipiscing.
 
 列表项占一行，以*、+、-开头即可：
 
-```
+```markdown
 *   Red
 *   Green
 *   Blue
@@ -99,7 +99,7 @@ id sem consectetuer libero luctus adipiscing.
 
 有序列表只需要将上述标记符换成数字加句点。而且顺序由书写顺序决定，与数字无关，但数字需要从1开始。例如：
 
-```
+```markdown
 1\.  Bird
 3.  McHale
 2.  Parish
@@ -114,7 +114,7 @@ id sem consectetuer libero luctus adipiscing.
 
 每一个列表项可以多行：
 
-```
+```markdown
 *   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
 Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
 viverra nec, fringilla in, laoreet vitae, risus.
@@ -132,7 +132,7 @@ Suspendisse id sem consectetuer libero luctus adipiscing.
 
 每一行前面缩进四个或以上个空格，就认为是开始了一段代码块。代码块内原样输出。
 
-```
+```markdown
 This is a normal paragraph:
 
     This is a code block.
@@ -143,7 +143,7 @@ This is a normal paragraph:
 
 This is a normal paragraph:
 
-```
+```markdown
 This is a code block.
 
 ```
@@ -152,7 +152,7 @@ This is a code block.
 
 三个或更多个`*`、`-`（它们之间可以有空格）会产生横线：
 
-```
+```markdown
 * * *
 
 ```
@@ -165,7 +165,7 @@ This is a code block.
 
 内嵌链接：
 
-```
+```markdown
 I get 10 times more traffic from [Google](http://google.com/ "Google")
 than from [Yahoo](http://search.yahoo.com/ "Yahoo Search") or
 [MSN](http://search.msn.com/ "MSN Search").
@@ -174,7 +174,7 @@ than from [Yahoo](http://search.yahoo.com/ "Yahoo Search") or
 
 或参考文献式链接（缺省的链接标记认为与文本一致）：
 
-```
+```markdown
 I get 10 times more traffic from [Google] [1] than from
 [Yahoo] [2] or [MSN] [3].
 
@@ -197,7 +197,7 @@ I get 10 times more traffic from [Google](http://google.com/ "Google") than from
 
 如果直接以链接地址作为链接文本，可以用如下快捷写法：
 
-```
+```html
 <http://www.shengbin.me> 效果：
 
 ```
@@ -208,7 +208,7 @@ I get 10 times more traffic from [Google](http://google.com/ "Google") than from
 
 单个`*`或`_`产生斜体，两个（`**`、`__`）则产生粗体。例如：
 
-```
+```markdown
 *like* _this_
 
 **like** **this**
@@ -223,7 +223,7 @@ I get 10 times more traffic from [Google](http://google.com/ "Google") than from
 
 ### 内嵌代码
 
-```
+```markdown
 code: `echo hello`
 
 ```
@@ -240,7 +240,7 @@ code: `echo hello`
 
 以下特殊字符需要用`\`转义得到。
 
-```
+```markdown
 \   backslash
 `   backtick
 *   asterisk

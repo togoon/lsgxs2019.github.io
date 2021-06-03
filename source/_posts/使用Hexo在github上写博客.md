@@ -45,7 +45,7 @@ tags:  Hexo
 
   themes目录下的next目录，就是下载的next主题，还需要在设置_config.yml文件应用next主题：
 
-  ```
+  ```bash
   # Extensions
   ## Plugins: https://hexo.io/plugins/
   ## Themes: https://hexo.io/themes/
@@ -75,7 +75,7 @@ tags:  Hexo
 
   * add the following configuration to _config.yml
 
-    ```
+    ```bash
     deploy:
       type: git
       repo: <repository url> # https://github.com/username/username.github.io

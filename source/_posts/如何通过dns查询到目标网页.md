@@ -7,7 +7,7 @@ date: 2021-05-24
 
   以www.example.com为例子说明域名的层级结构。其中的.com部分叫做顶级域名(top-level domain)，.example部分为次级域名，www为主机部分。实际上在顶级域名之上还有一个层级叫做根域名root，因为完整的域名应该如下图所示：
 
-  ```
+  ```markdown
   主机.次级域名.顶级域名.根域名
   hostname.sld.tld.root
   www.example.www.root

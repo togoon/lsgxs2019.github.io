@@ -10,7 +10,14 @@ menu:
   Categories:
     url: /categories
     icon: fas fa-bookmark
-  Archives:
+    children:
+      - name: stock
+        url: /stock
+        icon: fas fa-music
+      - name: Ebook
+        url: /ebook
+        icon: fas fa-music  
+    Archives:
     url: /archives
     icon: fas fa-archive
   About:

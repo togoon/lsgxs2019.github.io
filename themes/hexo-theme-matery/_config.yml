@@ -8,8 +8,7 @@ menu:
     url: /tags
     icon: fas fa-tags
   Categories:
-    url: /categories
-    icon: fas fa-bookmark
+    icon: fas fa-list
     children:
       - name: stock
         url: /stock
@@ -17,9 +16,6 @@ menu:
       - name: Ebook
         url: /ebook
         icon: fas fa-music  
-    Archives:
-    url: /archives
-    icon: fas fa-archive
   About:
     url: /about
     icon: fas fa-user-circle

@@ -640,18 +640,18 @@
 $ git clone https://github.com/iissnan/hexo-theme-next themes/next
 </code></pre>
 <p>themes目录下的next目录，就是下载的next主题，还需要在设置_config.yml文件应用next主题：</p>
-<pre><code># Extensions
-## Plugins: https://hexo.io/plugins/
-## Themes: https://hexo.io/themes/
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># Extensions</span>
+<span class="token comment" spellcheck="true">## Plugins: https://hexo.io/plugins/</span>
+<span class="token comment" spellcheck="true">## Themes: https://hexo.io/themes/</span>
 theme: next
 
-# Deployment
-## Docs: https://hexo.io/docs/deployment.html
+<span class="token comment" spellcheck="true"># Deployment</span>
+<span class="token comment" spellcheck="true">## Docs: https://hexo.io/docs/deployment.html</span>
 deploy:
-type: git
+type: <span class="token function">git</span>
 repo: git@github.com:username/username.github.io.git
 branch: master
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 </li>
 <li><p>编辑hexo项目的配置文件_config.yml</p>
 </li>
@@ -667,12 +667,12 @@ branch: master
 </ul>
 </li>
 <li><p>add the following configuration to _config.yml</p>
-<pre><code>deploy:
-  type: git
-  repo: &lt;repository url&gt; # https://github.com/username/username.github.io
-  branch: [branch]
-  message: [message]
-</code></pre>
+<pre class="line-numbers language-bash"><code class="language-bash">deploy:
+  type: <span class="token function">git</span>
+  repo: <span class="token operator">&lt;</span>repository url<span class="token operator">></span> <span class="token comment" spellcheck="true"># https://github.com/username/username.github.io</span>
+  branch: <span class="token punctuation">[</span>branch<span class="token punctuation">]</span>
+  message: <span class="token punctuation">[</span>message<span class="token punctuation">]</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 </li>
 </ul>
 </li>

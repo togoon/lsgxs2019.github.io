@@ -602,8 +602,8 @@
 <h3 id="Post-Asset-Folder"><a href="#Post-Asset-Folder" class="headerlink" title="Post Asset Folder"></a>Post Asset Folder</h3><iframe src="https://www.youtube.com/embed/feIDVQ2tz0o" frameborder="0" loading="lazy" allowfullscreen="" style="box-sizing: inherit; margin: 1em 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; font-size: 15px; vertical-align: baseline;"></iframe>
 
 <p>For users who expect to regularly serve images and/or other assets, and for those who prefer to separate their assets on a post-per-post basis, Hexo also provides a more organized way to manage assets. This slightly more involved, but very convenient approach to asset management can be turned on by setting the <code>post_asset_folder</code> setting in <code>_config.yml</code> to true.</p>
-<pre><code>_config.ymlpost_asset_folder: true
-</code></pre>
+<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token key atrule">_config.ymlpost_asset_folder</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>With asset folder management enabled, Hexo will create a folder every time you make a new post with the <code>hexo new [layout] &lt;title&gt;</code> command. This asset folder will have the same name as the markdown file associated with the post. Place all assets related to your post into the associated folder, and you will be able to reference them using a relative path, making for an easier and more convenient workflow.</p>
 
                 

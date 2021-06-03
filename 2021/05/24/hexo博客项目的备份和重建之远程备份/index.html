@@ -615,7 +615,7 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h4 id="认识hexo项目的目录结构"><a href="#认识hexo项目的目录结构" class="headerlink" title="认识hexo项目的目录结构"></a>认识hexo项目的目录结构</h4><p>使用hexo init之后，hexo会在你指定的目录下创建项目所需的目录和文件,如下图所示</p>
-<pre><code>.github     ----
+<pre class="line-numbers language-tiddlywiki"><code class="language-tiddlywiki">.github     ----
 node_modules----项目依赖的包文件
 scaffolds   ----模版文件
 soruce      ----保存用户文档
@@ -625,14 +625,14 @@ _config.landscape.yml----
 _config.yml ----项目配置文件
 package.json----
 package-lock.json
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>在初始化hexo项目目录之后，基本的博客框架建立，就可以开始使用markdown编辑器书写文档，保存在source_posts目录下。</p>
 <p>文档编辑完成后，就可以使用hexo generate 来生成静态的网页文件，所有生成的文件都保存在public目录下。这段英文来自hexo官方文档的描述:</p>
 <blockquote>
 <p>All generated files are saved in the <code>public</code> folder. You can copy them to wherever you like。</p>
 </blockquote>
 <p>此时hexo博客项目的目录下又多了public目录和db.json。db.json是以json格式的文件来保存你的博客文档的元数据。</p>
-<pre><code>.github     ----
+<pre class="line-numbers language-tiddlywiki"><code class="language-tiddlywiki">.github     ----
 node_modules----项目依赖的包文件
 public      ----hexo generate 生成的所有静态网页文件及资源文件
 scaffolds   ----模版文件
@@ -644,42 +644,42 @@ _config.yml ----项目配置文件
 package.json----
 package-lock.json
 db.json
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h4 id="在本地使用发布静态网页和备份项目文件的命令"><a href="#在本地使用发布静态网页和备份项目文件的命令" class="headerlink" title="在本地使用发布静态网页和备份项目文件的命令"></a>在本地使用发布静态网页和备份项目文件的命令</h4><p>第一步、发布文档</p>
-<pre><code>hexo clean 
+<pre class="line-numbers language-bash"><code class="language-bash">hexo clean 
 hexo g
 hexo d
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p>  第二步、备份项目文件到github仓库的指定分支</p>
-<pre><code>使用gi命令上传到github单独的仓库或者分支，这个可以作为hexo博客项目的备份方法。
-git  add .
-git commit-m &quot;push hexo project fiels&quot;
-git push origin main:hexo
-</code></pre>
+<pre class="line-numbers language-bash"><code class="language-bash">使用gi命令上传到github单独的仓库或者分支，这个可以作为hexo博客项目的备份方法。
+<span class="token function">git</span>  add <span class="token keyword">.</span>
+<span class="token function">git</span> commit-m <span class="token string">"push hexo project fiels"</span>
+<span class="token function">git</span> push origin main:hexo
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <h4 id="通过git命令把hexo项目保存在github的username-github-io仓库"><a href="#通过git命令把hexo项目保存在github的username-github-io仓库" class="headerlink" title="通过git命令把hexo项目保存在github的username.github.io仓库"></a>通过git命令把hexo项目保存在github的username.github.io仓库</h4><p>在本地把hexo项目纳入git管理</p>
-<pre class="line-numbers language-在本地新建一个目录，用来保存hexo项目的目录"><code class="language-在本地新建一个目录，用来保存hexo项目的目录">在本地新建一个目录hexo-source，用来保存hexo项目
-cd hexo-source
-git init 
-git checkout --orphan source 
+<pre class="line-numbers language-bash"><code class="language-bash">在本地新建一个目录hexo-source，用来保存hexo项目
+<span class="token function">cd</span> hexo-source
+<span class="token function">git</span> init 
+<span class="token function">git</span> checkout --orphan <span class="token function">source</span> 
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <p>把博客项目复制到hexo-source目录下</p>
-<pre><code> 把hexo博客项目根目录下的所有内容复制到hexo-source目录
- 在.gitignore文件中仅保留下面三项内容（从hexo init 、hexo generate、hexo deploy这三个步骤来看，只有这三项是通过项目框架动态生成的，可以删除).从自己的实践来看，.gitignore文件是为git命令而设定的。比如，如果按照该文件默认的设置，是包含node_moudles项目的，也就是在git add &amp; git commit -m &quot;xx&quot; &amp;git push 时，不会上传node_moudles的，好处是节省带宽，但是如果上传node_moudles的话，再次git clone博客项目时，不必再次运行 npm install(也许你已经忘记了)，就可以直接开始写markdown文档，然后hexo g -d 就可以完成所有流程。
-     public/
-     .deploy*/
-     db.json
-     
-</code></pre>
+<pre class="line-numbers language-markdown"><code class="language-markdown"> 把hexo博客项目根目录下的所有内容复制到hexo-source目录
+ 在.gitignore文件中仅保留下面三项内容（从hexo init 、hexo generate、hexo deploy这三个步骤来看，只有这三项是通过项目框架动态生成的，可以删除).从自己的实践来看，.gitignore文件是为git命令而设定的。比如，如果按照该文件默认的设置，是包含node<span class="token italic"><span class="token punctuation">_</span>moudles项目的，也就是在git add &amp; git commit -m "xx" &amp;git push 时，不会上传node<span class="token punctuation">_</span></span>moudles的，好处是节省带宽，但是如果上传node_moudles的话，再次git clone博客项目时，不必再次运行 npm install(也许你已经忘记了)，就可以直接开始写markdown文档，然后hexo g -d 就可以完成所有流程。
+<span class="token code keyword">     public/</span>
+<span class="token code keyword">     .deploy*/</span>
+<span class="token code keyword">     db.json</span>
+<span class="token code keyword">     </span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>把博客项目推送到github仓库</p>
-<pre><code> git add .
- git commit -m &quot;add hexo blog project source to githut repo branch &quot;
- git remote add origin https://github.com/lsgxs2019/lsgxs2019.github.io
- git push origin source:source   ---- 推送hexo项目到username.github.io的source分支
+<pre class="line-numbers language-bash"><code class="language-bash"> <span class="token function">git</span> add <span class="token keyword">.</span>
+ <span class="token function">git</span> commit -m <span class="token string">"add hexo blog project source to githut repo branch "</span>
+ <span class="token function">git</span> remote add origin https://github.com/lsgxs2019/lsgxs2019.github.io
+ <span class="token function">git</span> push origin source:source   ---- 推送hexo项目到username.github.io的source分支
  设定username.github.io仓库的默认分支为source（我这里的名称为source）
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>在本地恢复博客项目</p>
-<pre><code>如果项目文件出错的话，就可以直接在本地使用git clone 来下载username.github.io仓库到本地，实现快速恢复，提高工作效率。
-</code></pre>
+<pre class="line-numbers language-tiddlywiki"><code class="language-tiddlywiki">如果项目文件出错的话，就可以直接在本地使用git clone 来下载username.github.io仓库到本地，实现快速恢复，提高工作效率。
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>具体执行过程见下面的图片</p>
 <p><img src="/images/hexo/create-empty-branch-to-github.jpg" alt="img"></p>
 

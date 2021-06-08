@@ -110,3 +110,8 @@ deploy:
   type: git
   repo: git@github.com:lsgxs2019/lsgxs2019.github.io.git
   branch: master
+
+# search
+search:
+  path: search.xml
+  field: post 

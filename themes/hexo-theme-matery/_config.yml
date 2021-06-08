@@ -8,14 +8,9 @@ menu:
     url: /tags
     icon: fas fa-tags
   Categories:
+    url: /categories
     icon: fas fa-list
-    children:
-      - name: stock
-        url: /stock
-        icon: fas fa-music
-      - name: Ebook
-        url: /ebook
-        icon: fas fa-music  
+      
   About:
     url: /about
     icon: fas fa-user-circle

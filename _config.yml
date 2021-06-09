@@ -102,14 +102,14 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: hexo-theme-matery
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
   repo: git@github.com:lsgxs2019/lsgxs2019.github.io.git
-  branch: master
+  branch: hexo-next-source
 
 # search
 search:

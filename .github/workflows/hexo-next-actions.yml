@@ -5,7 +5,7 @@ name: CI Hexo Blog Deploy LTS
 on: 
   push:
     branches:
-      - source
+      - hexo-next-source
 
 jobs:
   Deploy-Pages: 
@@ -56,5 +56,5 @@ jobs:
         cd ./public/
         git add .
         git commit -F ../commit-message.log
-        git push --force --quiet "https://${Github_Token}@${Github_Pages}" master:master
+        git push --force --quiet "https://${Github_Token}@${Github_Pages}" master:gh-pages
 

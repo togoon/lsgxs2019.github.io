@@ -10,16 +10,15 @@ menu:
   Categories:
     url: /categories
     icon: fas fa-list
-      
-  About:
-    url: /about
-    icon: fas fa-user-circle
-  Contact:
-    url: /contact
-    icon: fas fa-comments
-  Friends:
-    url: /friends
-    icon: fas fa-address-book
+  #  About:
+  #  url: /about
+  #  icon: fas fa-user-circle
+  #Contact:
+  #  url: /contact
+  # icon: fas fa-comments
+  #Friends:
+  #  url: /friends
+  #  icon: fas fa-address-book
   # 二级菜单写法如下
   Medias:
     icon: fas fa-list
@@ -41,12 +40,12 @@ menu:
 # 站点运行开始时间.
 time:
   enable: false
-  year: 2019 # 年份
+  year: 2021 # 年份
   month: 06 # 月份
-  date: 28 # 日期
-  hour: 00 # 小时
-  minute: 00 # 分钟
-  second: 00 # 秒
+  date: 01 # 日期
+  hour: 07 # 小时
+  minute: 08 # 分钟
+  second: 08 # 秒
 
 # Index cover carousel configuration.
 # 首页封面轮播图的相关配置.
@@ -54,7 +53,7 @@ cover:
   showPrevNext: true # 是否显示左右切换按钮. Whether to display the left and right toggle buttons.
   showIndicators: true # 是否显示指示器. # Whether to display the indicators
   autoLoop: true # 是否自动轮播. Whether it is automatically rotated.
-  duration: 120 # 切换延迟时间. Switching delay time.
+  duration: 117 # 切换延迟时间. Switching delay time.
   intervalTime: 5000 # 自动切换下一张的间隔时间. Automatically switch the interval of the next one.
   useConfig: false # 是否使用配置文件, 在 _data/covers.json 下配置推荐文章, false则使用主题在文章中的配置 cover coverImg
   # useConfig 使用方式: 将主题 hexo-theme-matery/source/_data/covers.json 移动到 my-blog/source/_data/下修改配置即可
@@ -64,8 +63,8 @@ cover:
 dream:
   enable: true
   showTitle: true
-  title: 我的梦想
-  text: 不是每个人都应该像我这样去建造一座水晶大教堂，但是每个人都应该拥有自己的梦想，设计自己的梦想，追求自己的梦想，实现自己的梦想。梦想是生命的灵魂，是心灵的灯塔，是引导人走向成功的信仰。有了崇高的梦想，只要矢志不渝地追求，梦想就会成为现实，奋斗就会变成壮举，生命就会创造奇迹。——罗伯·舒乐
+  title: 当下的自己
+  text:  相信这个世界上独一无二的自己，朝着梦想的地方出发，你就在当下
 
 # Whether to display the musics.
 # 是否在首页显示音乐.

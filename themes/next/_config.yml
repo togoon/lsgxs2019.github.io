@@ -995,3 +995,5 @@ vendors:
 css: css
 js: js
 images: images
+
+post_asset_folder: true # 创建时生成静态资源文件夹

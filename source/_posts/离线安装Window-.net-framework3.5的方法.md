@@ -5,7 +5,7 @@ tags:
   - windows
   - net framework3.5
 toc: true 
-img: /images/test.png
+thumbnail: /images/test.png
 ---
 
 ##  Windows10下安装dot net framework3.5的方法

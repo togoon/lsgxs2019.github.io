@@ -5,12 +5,15 @@ tags:
   - windows
   - net framework3.5
 toc: true 
+photo: /images/test.png
 ---
 
 ##  Windows10下安装dot net framework3.5的方法
 
 #### 在线安装
-有网络的情况下，dot Net Framework3.5是很简单，在win10下控制面板的程序功能下，点击开启或者关闭windows功能，直接选择开启或者关闭dot net framework3.5即可。
+有网络的情况下，dot Net Framework3.5是很简单，在win10下控制面板的程序功能下，点击开启或者关闭windows功能，直接选择开启或者关闭dot net framework3.5即可。如果没有网络的情况，可以使用下面两种方法之一安装dot net framework.
+
+<!--more-->
 
 #### 离线安装
 

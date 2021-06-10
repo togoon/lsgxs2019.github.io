@@ -14,7 +14,9 @@
 * master
    * 存放hexo-matery项目生成的静态网站文件
 * hexo-next-source
- * 存放hexo-next项目的源文件，在.github\workflow目录下有.yml文件，执行git push到souce分支时，会执行actions自动部署到gh-pages分支
+   * 存放hexo-next项目的源文件，在.github\workflow目录下有.yml文件，执行git push到souce分支时，会执行actions自动部署到gh-pages分支
 * gh-pages
    * 存放hexo-next项目生成的静态网站文件
+
+* 因为github的网络问题，tiddlywiki可以考虑保存到coding.net上。
 

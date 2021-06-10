@@ -983,7 +983,7 @@ vendors:
   # canvas_lines: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/canvas_lines.min.js
   # canvas_sphere: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/canvas_sphere.min.js
   three:
-  three_waves:
+  three_waves: true
   canvas_lines:
   canvas_sphere:
 

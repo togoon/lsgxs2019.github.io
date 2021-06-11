@@ -46,9 +46,9 @@ time:
   year: 2021 # 年份
   month: 06 # 月份
   date: 01 # 日期
-  hour: 07 # 小时
-  minute: 08 # 分钟
-  second: 08 # 秒
+  #hour: 07 # 小时
+  #minute: 08 # 分钟
+  #second: 08 # 秒
 
 # Index cover carousel configuration.
 # 首页封面轮播图的相关配置.
@@ -218,11 +218,11 @@ myProjects:
   #    iconBackground: 'linear-gradient(to bottom right, #66BB6A 0%, #81C784 100%)'
   #    url: http://github.com/blinkfox/hexo-theme-matery
   #    desc: This is a Hexo blog theme with 'Material Design' and responsive design.
-    tiddlywiki2021:
-        icon: fas fa-database
-        iconBackground: 'linear-gradient(to bottom right, #F06292 0%, #EF5350 100%)'
-        url: https://tiddlywiki2021.github.io
-        desc: 使用tiddlywiki记录笔记
+  tiddlywiki2021:
+      icon: fas fa-database
+      iconBackground: 'linear-gradient(to bottom right, #F06292 0%, #EF5350 100%)'
+      url: https://tiddlywiki2021.github.io
+      desc: 使用tiddlywiki记录笔记
     #typora-vue-theme:
     #    icon: fas fa-file-alt
     #    iconBackground: 'linear-gradient(to bottom right, #29B6F6 0%, #1E88E5 100%)'

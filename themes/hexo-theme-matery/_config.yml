@@ -13,9 +13,9 @@ menu:
   TiddlyWiki:
     url: /mytiddlywiki
     icon: fas fa-address-book  
-  #  About:
-  #  url: /about
-  #  icon: fas fa-user-circle
+  About:
+    url: /about
+    icon: fas fa-user-circle
   #Contact:
   #  url: /contact
   # icon: fas fa-comments

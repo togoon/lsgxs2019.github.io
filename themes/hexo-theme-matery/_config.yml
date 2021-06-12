@@ -220,11 +220,11 @@ myProjects:
        iconBackground: 'linear-gradient(to bottom right, #F06292 0%, #EF5350 100%)'
        url: https://tiddlywiki2021.github.io
        desc: 使用tiddlywiki记录笔记
-    #typora-vue-theme:
-    #    icon: fas fa-file-alt
-    #    iconBackground: 'linear-gradient(to bottom right, #29B6F6 0%, #1E88E5 100%)'
-    #    url: https://github.com/blinkfox/typora-vue-theme
-    #    desc: This is a typora theme inspired by Vue document style.
+     tiddlywiki2019:
+       icon: fas fa-file-alt
+       iconBackground: 'linear-gradient(to bottom right, #29B6F6 0%, #1E88E5 100%)'
+       url: https://tiddlywiki2019.tiddlyhost.com/
+       desc: 在tiddlyhost上开始的新tiddlywiki笔记
 
 # config my skills informations in about page.
 # If you don't want to display this `My Skills` content, you can deactivate or delete this configuration.

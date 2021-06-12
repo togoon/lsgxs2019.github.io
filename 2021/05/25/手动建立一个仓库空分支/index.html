@@ -457,21 +457,39 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <ul>
-<li><p>在磁盘任意位置新建一个目录</p>
-</li>
-<li><p>切换到新建的目录下，使用git bash here</p>
-<pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">git</span> init     --在当前目录下生成.git目录树，把当前目录纳入版本管理
-<span class="token function">git</span> checkout --orphan <span class="token function">source</span>    --使用orphan参数来新建一个没有父节点的分支source，并自动切换到source分支下
-<span class="token keyword">echo</span> <span class="token string">"create an empty branch "</span> <span class="token operator">></span> readme.md      --新建一个简单的说明文件，目的是在当前的branch下完成commit，才能真正创建这个source分支
-<span class="token function">git</span> add <span class="token keyword">.</span>
-<span class="token function">git</span>  commit -m <span class="token string">"create a orphan  branch,name is source "</span>
-<span class="token function">git</span> remote add origin https://github.com/username.github.io
-<span class="token function">git</span> push origin source:source  ---把本地新建的branch分支push 到username.github.io仓库下,名字也是source.
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>打开你的username.github.io仓库，就可以看到刚刚推送的独立分支source，仅仅包含一个readme.md文件</p>
-</li>
+<li>和github仓库建立链接的最方便的方法是使用git clone命令把github的仓库拉取到本地，会自动执行一组下面的命令</li>
 </ul>
-<p> 根据需要，也可以在本地使用git命令把readme.md文件删除，这样source分支就是真正意义上空分支了。</p>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">git</span> init <span class="token function">dirname</span>
+<span class="token function">git</span> checkout -b branchname
+<span class="token function">git</span> remote add origin  git@github.com:username/username.github.io.git  
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>有时候需要自己手动现在本地建立一个git 分支，然后再推送到远程已存在的仓库，方法如下：</li>
+</ul>
+<pre class="line-numbers language-bash"><code class="language-bash">在磁盘任意位置新建一个目录
+
+ 切换到新建的目录下，使用git <span class="token function">bash</span> here
+
+ <span class="token function">git</span> init     --在当前目录下生成.git目录树，把当前目录纳入版本管理
+
+ <span class="token function">git</span> checkout --orphan <span class="token function">source</span>    --使用orphan参数来新建一个没有父节点的分支source，并自动切换到source分支下
+
+ <span class="token keyword">echo</span> <span class="token string">"create an empty branch "</span> <span class="token operator">></span> readme.md      --新建一个简单的说明文件，目的是在当前的branch下完成commit，才能真正创建这个source分支
+
+ <span class="token function">git</span> add <span class="token keyword">.</span>
+
+ <span class="token function">git</span>  commit -m <span class="token string">"create a orphan  branch,name is source "</span>
+
+ <span class="token function">git</span> remote add origin https://github.com/username.github.io
+
+ <span class="token function">git</span> push origin source:source  ---把本地新建的branch分支push 到username.github.io仓库下,名字也是source.
+
+ 打开你的username.github.io仓库，就可以看到刚刚推送的独立分支source，仅仅包含一个readme.md文件
+
+根据需要，也可以在本地使用git命令把readme.md文件删除，这样source分支就是真正意义上空分支了。
+
+  
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
                 
             </div>

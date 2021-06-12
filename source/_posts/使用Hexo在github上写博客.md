@@ -1,7 +1,9 @@
 ---
 title: 使用Hexo在github上写博客
 date: 2021-05-19
+categories: hexo
 tags:  Hexo
+description: 安装hexo所需要的软件环境，把博客项目部署到github上
 ---
 
 ## 使用Hexo在github上写博客

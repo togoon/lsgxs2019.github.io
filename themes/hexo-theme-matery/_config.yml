@@ -10,9 +10,7 @@ menu:
   Categories:
     url: /categories
     icon: fas fa-list
-  TiddlyWiki:
-    url: /mytiddlywiki
-    icon: fas fa-address-book  
+    
   About:
     url: /about
     icon: fas fa-user-circle

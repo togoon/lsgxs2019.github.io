@@ -936,12 +936,11 @@ hexo deploy  （一般要执行hexo deploy 或者hexo d,hexo deploye时， 是�
                         diffMinutes * minutes) / seconds);
                     if (startYear == todayYear) {
                         document.getElementById("year").innerHTML = todayYear;
-                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
-                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " ;
                     } else {
                         document.getElementById("year").innerHTML = startYear + " - " + todayYear;
                         document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
-                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                            " 天 " ;
                     }
                 }
                 setInterval(siteTime, 1000);

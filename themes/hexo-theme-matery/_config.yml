@@ -63,7 +63,7 @@ dream:
   enable: true
   showTitle: true
   title: 当下的自己
-  text:  相信这个世界上独一无二的自己，朝着梦想的地方出发，你就在当下
+  text:  相信这个世界上独一无二的自己，朝着梦想的地方前行，永不言弃
 
 # Whether to display the musics.
 # 是否在首页显示音乐.
@@ -202,7 +202,7 @@ clicklove:
 profile:
   avatar: /medias/logo.png
   career: freely
-  introduction: If you wish to succeed, you should use persistence as your good friend, full of confidence in your life
+  introduction: you should use persistence as your good friend, be full of confidence 
 
 # config my projects informations in about page.
 # If you don't want to display this `My Projects` content, you can deactivate or delete this configuration.

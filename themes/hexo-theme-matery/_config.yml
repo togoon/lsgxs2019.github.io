@@ -223,7 +223,7 @@ myProjects:
     tiddlywiki2021:
       icon: fas fa-database
       iconBackground: 'linear-gradient(to bottom right, #F06292 0%, #EF5350 100%)'
-      url: https://tiddlywiki2021.github.io
+      url: https://tiddlywiki2019.tiddlyhost.com/
       desc: 使用tiddlywiki记录笔记
   
 

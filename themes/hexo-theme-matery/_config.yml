@@ -210,16 +210,16 @@ profile:
 myProjects:
   enable: true
   data:
-    tiddlywiki5:
-      icon: fas fa-file-alt
-      iconBackground: 'linear-gradient(to bottom right, #29B6F6 0%, #1E88E5 100%)'
-      url: https://github.com/Jermolene/TiddlyWiki5
-      desc: 国外一个javascript开发的单个html文件实现全功能笔记的开源项目，真心好用
-    tiddlyhost.com:
-      icon: fas fa-file-alt
-      iconBackground: 'linear-gradient(to bottom right, #66BB6A 0%, #81C784 100%)'
-      url: https://github.com/simonbaird/tiddlyhost
-      desc: 国外一个为tiddlywiki笔记提供web服务的开源项目
+    #tiddlywiki5:
+    #  icon: fas fa-file-alt
+    #  iconBackground: 'linear-gradient(to bottom right, #29B6F6 0%, #1E88E5 100%)'
+    #  url: https://github.com/Jermolene/TiddlyWiki5
+    #  desc: 国外一个javascript开发的单个html文件实现全功能笔记的开源项目，真心好用
+    #tiddlyhost.com:
+    #  icon: fas fa-file-alt
+    #  iconBackground: 'linear-gradient(to bottom right, #66BB6A 0%, #81C784 100%)'
+    #  url: https://github.com/simonbaird/tiddlyhost
+    #  desc: 国外一个为tiddlywiki笔记提供web服务的开源项目
     tiddlywiki2019:
       icon: fas fa-database
       iconBackground: 'linear-gradient(to bottom right, #F06292 0%, #EF5350 100%)'

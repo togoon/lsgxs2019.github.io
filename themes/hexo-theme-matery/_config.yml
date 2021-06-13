@@ -210,21 +210,22 @@ profile:
 myProjects:
   enable: true
   data:
-  #  hexo-theme-matery:
-  #    icon: fas fa-file-alt
-  #    iconBackground: 'linear-gradient(to bottom right, #66BB6A 0%, #81C784 100%)'
-  #    url: http://github.com/blinkfox/hexo-theme-matery
-  #    desc: This is a Hexo blog theme with 'Material Design' and responsive design.
-     tiddlywiki2021:
-       icon: fas fa-database
-       iconBackground: 'linear-gradient(to bottom right, #F06292 0%, #EF5350 100%)'
-       url: https://tiddlywiki2021.github.io
-       desc: 使用tiddlywiki记录笔记
-     tiddlywiki2019:
-       icon: fas fa-file-alt
-       iconBackground: 'linear-gradient(to bottom right, #29B6F6 0%, #1E88E5 100%)'
-       url: https://tiddlywiki2019.tiddlyhost.com/
-       desc: 在tiddlyhost上开始的新tiddlywiki笔记
+    tiddlywiki5:
+      icon: fas fa-file-alt
+      iconBackground: 'linear-gradient(to bottom right, #29B6F6 0%, #1E88E5 100%)'
+      url: https://github.com/Jermolene/TiddlyWiki5
+      desc: 国外一个javascript开发的单个html文件实现全功能笔记的开源项目，真心好用
+    tiddlyhost.com:
+      icon: fas fa-file-alt
+      iconBackground: 'linear-gradient(to bottom right, #66BB6A 0%, #81C784 100%)'
+      url: https://github.com/simonbaird/tiddlyhost
+      desc: 国外一个为tiddlywiki笔记提供web服务的开源项目
+    tiddlywiki2021:
+      icon: fas fa-database
+      iconBackground: 'linear-gradient(to bottom right, #F06292 0%, #EF5350 100%)'
+      url: https://tiddlywiki2021.github.io
+      desc: 使用tiddlywiki记录笔记
+  
 
 # config my skills informations in about page.
 # If you don't want to display this `My Skills` content, you can deactivate or delete this configuration.

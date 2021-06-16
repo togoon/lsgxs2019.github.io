@@ -5,3 +5,7 @@ type: "about"
 layout: "about"
 ---
 
+# About 
+
+<div style="color: blue;">About me </div>
+

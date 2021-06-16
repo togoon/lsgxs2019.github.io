@@ -482,7 +482,7 @@
 
  <span class="token function">git</span> remote add origin https://github.com/username.github.io
 
- <span class="token function">git</span> push origin source:source  ---把本地新建的branch分支push 到username.github.io仓库下,名字也是source.
+ <span class="token function">git</span> push -u origin source:source  ---把本地新建的branch分支push 到username.github.io仓库下,名字也是source.
 
  打开你的username.github.io仓库，就可以看到刚刚推送的独立分支source，仅仅包含一个readme.md文件
 
@@ -490,6 +490,9 @@
   
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p><img src="/images/Create-Empty-Branch.png" alt="手动建立空的分支"></p>
+<ul>
+<li>在当前的.git管理的目录下手动建立新的分支，通过实践发现git checkout -b branch-name之后，有当前分支的内容，需要删除当前分支的内容，然后添加新建的分支需要包含的内容，推送到远程仓库。</li>
+</ul>
 
                 
             </div>

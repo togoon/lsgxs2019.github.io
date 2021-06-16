@@ -72,11 +72,11 @@ social_contact:
 menu:
   Home: /
   Archives: /archives
-  # Categories: /categories
-  # Tags: /tags
-  # Links: /links
+  Categories: /categories
+  Tags: /tags
+  Links: /links
   About: /about
-  # Changelog: /changelog
+  Changelog: /changelog
   # ......
 
 
@@ -133,7 +133,7 @@ toc:
   expand_all: false
 
   # If true, open TOC every time when you enter the article page
-  init_open: false
+  init_open: true
 
 
 # ---------------------------------------------------------------------------------------
@@ -152,8 +152,8 @@ website_count:
   busuanzi_count:
     enable: true
     site_uv: true
-    site_pv: true
-    page_pv: true
+    site_pv: false
+    page_pv: false
 
 
 # ---------------------------------------------------------------------------------------

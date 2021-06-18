@@ -5,6 +5,7 @@ tags:
   - hexo 
   - asset folder
 cover: /2021/06/17/assets-folders/bee.png
+thumbnail: /2021/06/17/assets-folders/bee.png
 ---
 
 

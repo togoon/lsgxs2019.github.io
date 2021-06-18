@@ -19,7 +19,7 @@ tags: github
 
   * 注意留心一下仓库建立完毕后，github显示的关于操作github的git命令帮助文档。
 
-    
+    <!--more-->
 
 * 下载并安装Windows版本的Git
 

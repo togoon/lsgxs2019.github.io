@@ -4,10 +4,10 @@ date: 2021-06-17 22:37:57
 tags: 
   - hexo 
   - asset folder
-cover: /2021/06/17/assets-folders/winxp.jpg
+cover: /2021/06/17/assets-folders/bee.png
 ---
 
-![](/images/post-cover-1.png)
+
 
 ## Global Asset Folder
 

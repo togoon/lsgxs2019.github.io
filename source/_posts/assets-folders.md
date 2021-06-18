@@ -7,7 +7,7 @@ tags:
 cover: /2021/06/17/assets-folders/winxp.jpg
 ---
 
-![](/images/post-cover-1.jpg)
+![](/images/post-cover-1.png)
 
 ## Global Asset Folder
 

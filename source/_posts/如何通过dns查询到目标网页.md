@@ -2,7 +2,7 @@
 title: 如何通过dns查询到目标网页
 date: 2021-05-24
 description: 理解域名的层次结构和查询方法
-cover: /2021/05/24/如何通过dns查询到目标网页/dns-domain-namespace.gif
+cover: /2021/05/24/如何通过dns查询到目标网页/dns-hierarchy.png
 ---
 
 * 域名的层次结构

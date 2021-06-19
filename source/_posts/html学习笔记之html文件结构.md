@@ -12,9 +12,12 @@ thumbnail:
 
 html语言是网页内容的基础，以标签式的结构和内容书写Html文件，由浏览器解释这些格式标签后，将html文件的内容渲染后在浏览器呈现。现在的网页技术涉及到html、css、javascript。html负责html文件的格式和内容，css渲染网页的样式，javascript用来在html中引入编程逻辑，生成更加丰富的交互式网页。
 
+<!--more-->
+
 ## 最简单的html文件结构
 
 ```html
+<!DOCTYPE html>
 < html lang="zh-CN" >
 
       <head>

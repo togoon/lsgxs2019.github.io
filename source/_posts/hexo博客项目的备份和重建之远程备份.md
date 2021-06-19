@@ -2,10 +2,7 @@
 title: hexo博客项目的备份和重建之远程备份
 date: 2021-05-24
 author: xian shan
-img: /images/logo.svg
 top: true
-cover: true
-coverImg: 
 toc: true
 mathjax: false
 summary: 了解hexo项目的目录结构,使用hexo deploy发布静态网页,同时使用git命令备份项目文件到远程的github仓库分支，了解hexo项目的目录结构,使用hexo deploy发布静态网页,同时使用git命令备份项目文件到远程的github仓库分支

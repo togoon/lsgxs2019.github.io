@@ -5,7 +5,7 @@ author: xian shan
 img: /images/logo.svg
 top: true
 cover: true
-coverImg: /images/logo.svg
+coverImg: 
 toc: true
 mathjax: false
 summary: 了解hexo项目的目录结构,使用hexo deploy发布静态网页,同时使用git命令备份项目文件到远程的github仓库分支，了解hexo项目的目录结构,使用hexo deploy发布静态网页,同时使用git命令备份项目文件到远程的github仓库分支

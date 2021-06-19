@@ -3,7 +3,8 @@ title:  git对github仓库分支的操作
 date: 2021-05-26
 tag:  git 
 categories: branch
-toc: true 
+toc: true
+description: 关于分支操作的几个常用命令介绍 
 ---
 
 #### 分支的查询

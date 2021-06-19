@@ -2,6 +2,7 @@
 title: 把Hexo生成的静态网页部署到coding上
 date: 2021-06-08
 tags:  coding
+description: 因为github的网速问题，可以尝试把hexo生成的静态博客文件发布到国内的coding上。
 ---
 
 ## 把Hexo生成的静态网页部署到coding上

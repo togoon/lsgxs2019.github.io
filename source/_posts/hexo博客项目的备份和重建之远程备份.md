@@ -32,6 +32,8 @@ package.json----
 package-lock.json
 ```
 
+<!--more-->
+
 在初始化hexo项目目录之后，基本的博客框架建立，就可以开始使用markdown编辑器书写文档，保存在source\_posts目录下。
 
 文档编辑完成后，就可以使用hexo generate 来生成静态的网页文件，所有生成的文件都保存在public目录下。这段英文来自hexo官方文档的描述:

@@ -14,6 +14,8 @@ In the diagram below, the boot sequence for all standard computers and operating
 
 As you can see, the boot process is broken down into several major components, each of which is a completely-separate subsystem with many different options and variations. The implementations of each component can differ greatly depending on your hardware and operating system, but the rules they follow and the process by which they work are always the same.
 
+<!--more-->
+
 ## Components of the Boot Process
 
 ###  The BIOS

@@ -2,6 +2,7 @@
 title: hexo博客项目的备份和重建
 date: 2021-05-24
 tag: how-to-use-hexo
+description: 如果hexo博客项目有问题的话，可以快速重建
 ---
 
 ## hexo博客项目的备份和重建之本地备份

@@ -32,7 +32,7 @@ description: 安装hexo所需要的软件环境，把博客项目部署到github
 
   * npm install
 
-    
+<!--more-->
 
  博客站点项目生成后，目录结构如下图：
 

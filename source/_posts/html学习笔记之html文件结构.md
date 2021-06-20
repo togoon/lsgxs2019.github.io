@@ -18,7 +18,7 @@ html语言是网页内容的基础，以标签式的结构和内容书写Html文
 
 ```html
 <!DOCTYPE html>
-< html lang="zh-CN" >
+<html lang="zh-CN" >
 
       <head>
           <meta charset="utf-8">

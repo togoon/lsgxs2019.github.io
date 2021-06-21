@@ -10,7 +10,7 @@ From : https://neosmart.net/wiki/mbr-boot-process/
 
 In the diagram below, the boot sequence for all standard computers and operating systems is shown:
 
-[![MBR Boot Sequence](https://neosmart.net/wiki/wp-content/uploads/sites/5/2015/01/MBR-Boot-Sequence-1024x385.png)](https://neosmart.net/wiki/wp-content/uploads/sites/5/2015/01/MBR-Boot-Sequence.png)
+[![MBR Boot Sequence](/images/MBR-Boot-Sequence.png)
 
 As you can see, the boot process is broken down into several major components, each of which is a completely-separate subsystem with many different options and variations. The implementations of each component can differ greatly depending on your hardware and operating system, but the rules they follow and the process by which they work are always the same.
 

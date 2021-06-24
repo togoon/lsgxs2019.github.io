@@ -274,7 +274,7 @@ widgets:
         links:
             Hexo: 'https://hexo.io'
             Bulma: 'https://bulma.io'
-            tiddlywiki: 'https://tiddlyhost.com'
+        
     # Categories widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar

@@ -17,9 +17,9 @@ categories:
 
 * Don’t Photoshop it … MATLAB it! Image Effects with MATLAB (Part 1) » Steve on Image Processing with MATLAB - MATLAB & Simulink (mathworks.com: <https://blogs.mathworks.com/steve/2012/11/13/image-effects-part-1/>
 
-* wizardforcel/eloquent-js-3e-zh: [译\] JavaScript 编程精解 中文第三版 (github.com):<https://github.com/wizardforcel/eloquent-js-3e-zh>
-
 * **Data Structures in JavaScript**: Arrays, HashMaps, and Lists | Adrian Mejia Blog: <https://adrianmejia.com/data-structures-time-complexity-for-beginners-arrays-hashmaps-linked-lists-stacks-queues-tutorial/>
 
 * **Basics of the Unix Philosophy**:<Basics of the Unix Philosophy (catb.org):<http://www.catb.org/~esr/writings/taoup/html/ch01s06.html)>
+[x] check out 
+[  ] done
 

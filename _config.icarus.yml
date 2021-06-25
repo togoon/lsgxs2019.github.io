@@ -165,7 +165,7 @@ comment:
     shortname: ''
 # Donate plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Donation/
-donates:
+#donates:
     # "Afdian.net" donate button configurations
     -
         type: afdian
@@ -195,9 +195,9 @@ donates:
         currency_code: USD
     # Wechat donate button configurations
     -
-        type: wechat
+    #    type: wechat
         # Wechat qrcode image URL
-        qrcode: ''
+    #    qrcode: ''
 # Share plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Share/
 share:
@@ -210,11 +210,11 @@ sidebar:
     # Left sidebar configurations
     left:
         # Whether the sidebar sticks to the top when page scrolls
-        sticky: false
+        sticky: true
     # Right sidebar configurations
     right:
         # Whether the sidebar sticks to the top when page scrolls
-        sticky: false
+        sticky: true
 # Sidebar widget configurations
 # http://ppoffice.github.io/hexo-theme-icarus/categories/Widgets/
 widgets:

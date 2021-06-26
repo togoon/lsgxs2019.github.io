@@ -5,6 +5,7 @@ tags:
   - todolist
 categories:
   - todolist
+cover: /2021/06/25/todolist-2021/goExploringInBook.jpg
 ---
 
 #### To do list

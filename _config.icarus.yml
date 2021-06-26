@@ -272,8 +272,8 @@ widgets:
         type: links
         # Names and URLs of the sites
         links:
-            Hexo: 'https://hexo.io'
-            Bulma: 'https://bulma.io'
+            tiddlywiki: 'https://tiddlywiki.com'
+            
         
     # Categories widget configurations
     -

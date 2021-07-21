@@ -14,6 +14,8 @@ tags: 单位系统维护
 
 * 运行批处理设置IE的各项参数
 
+  <!--more-->
+
 ~~~html
 REM 添加信任站点ip
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\Ranges\Range10" /v ":Range" /t REG_SZ /d   x.y.z.1  /f

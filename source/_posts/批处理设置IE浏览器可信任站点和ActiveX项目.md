@@ -57,4 +57,4 @@ REM WshShell.RegWrite("HKCU\\Software\\Microsoft\\Internet Explorer\\New Windows
 reg add "HKCU\Software\Microsoft\Internet Explorer\New Windows" /v "PopupMgr" /t REG_SZ /d no /f
 ~~~
 
-* 因IE浏览器只能受理少数几笔业务就会卡机，更换为360浏览器可以正常受理。
+* 因IE浏览器只能受理少数几笔业务就会卡机，更换为360浏览器可以正常受理，如果出现浏览器异常错误信息的话，设置360浏览器的退出清除项目，及时清理浏览记录，释放缓存。

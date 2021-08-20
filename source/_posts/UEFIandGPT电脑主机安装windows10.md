@@ -3,7 +3,7 @@ title: UEFIandGPT电脑主机安装windows10
 date: 2021-08-20 08:42:31
 tags: 系统维护
 categories: 系统维护
-cover: /2021/08/20/ UEFIandGPT电脑主机安装windows10/win壁纸_莲花.jpg
+cover: /2021/08/20/UEFIandGPT电脑主机安装windows10/win壁纸_莲花.jpg
 ---
 
 #### UEFI +GPT电脑主机安装Windows10

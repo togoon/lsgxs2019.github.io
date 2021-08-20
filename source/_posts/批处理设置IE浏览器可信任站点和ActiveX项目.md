@@ -2,6 +2,7 @@
 title: 批处理设置IE浏览器可信任站点和ActiveX项目
 date: 2021-07-21 20:09:00
 tags: 单位系统维护
+categories: 系统维护
 ---
 
 #### 使用批处理设置IE浏览器安全站点及ActiveX各项参数

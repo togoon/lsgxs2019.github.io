@@ -4,6 +4,8 @@ date: 2021-05-30
 tag: 
     -SSH
     -Https 
+categories: git
+cover: /2021/05/30/关于git与github通讯的Https协议和SSH协议/git命令.jpg
 ---
 
 ## git与github通讯的Https协议和SSH协议
@@ -34,6 +36,9 @@ tag:
   2.如果已经生成过密钥的话，就会显示这两个文件，在ssh-keygen命令中不带-f filename 参数的话，默认的文件名是id_rsa 和id_rsa.pub。
   3.在git bash命令窗口下使用clip < id_rsa.pub，可以把文件的内容复制到剪贴板上，登录到github，在网站的setting下打开SSH及GPG Keys选项，titile随便自己一个，把剪贴板的内容粘贴在ssh-key里，保存即可，以后使用git 操作github仓库时就可以使用git@github.com:username/username.github.io.git的格式了，这个据说时传输数据的效率比https更高一些。
   4.如果后来又重新生成了一对密钥文件，并且把公钥的内容添加在github上之后，就要把这对密钥对应的私钥覆盖到~/.ssh目录下，这个是安装git时默认的路径，如果想修改git 使用的密钥文件的话，就要修改环境变量，不想麻烦的话，就把新生成的密钥文件改名覆盖原来的密钥对文件即可。
+  5. 可以使用git remote -v 来查询当前连接的与github.com的连接是使用https:// 协议还是git协议。例如：
+  git clone https://github.com/username/username.github.io    //git remote -v  显示的是http协议连接github，git push origin也是。
+  git clone git@github.com:username/username.github.io //git remote -v 显示的是git协议连接github，git push origin也是。
   ```
   
   

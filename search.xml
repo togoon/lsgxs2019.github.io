@@ -4,11 +4,11 @@
   
     
     <entry>
-      <title>投资与投机</title>
-      <link href="/2021/10/05/%E6%8A%95%E8%B5%84%E4%B8%8E%E6%8A%95%E6%9C%BA/"/>
-      <url>/2021/10/05/%E6%8A%95%E8%B5%84%E4%B8%8E%E6%8A%95%E6%9C%BA/</url>
+      <title>口袋支点买点实例</title>
+      <link href="/2021/10/06/%E5%8F%A3%E8%A2%8B%E6%94%AF%E7%82%B9%E4%B9%B0%E7%82%B9%E5%AE%9E%E4%BE%8B/"/>
+      <url>/2021/10/06/%E5%8F%A3%E8%A2%8B%E6%94%AF%E7%82%B9%E4%B9%B0%E7%82%B9%E5%AE%9E%E4%BE%8B/</url>
       
-        <content type="html"><![CDATA[<ul><li><p>关于投资</p><ul><li>从国家宏观政策导向出发，分析行业发展空间，以股东的角色来分析公司的估值，以合理的价格买入标来获取回报</li><li>如果你买入的标的价格下跌，如果你是喜欢的，从这个角度上看是在投资</li></ul></li><li><p>关于投机</p><ul><li><p>不了解公司所属行业、主营业务、财务结构、盈利模式、成长空间等要素，直接看k线图来决定买卖的就是投机，或者叫做趋势投资。</p></li><li><p>当你买入的股票发生下跌后，一旦价格跌破你能承受的范围之内，不知道发生了什么，想快速卖出的就是投机</p></li></ul></li><li><p>投资与投机是两种不同的行为，无所谓好坏，但是你要知道自己在做什么。投机的话，不能投入权重过大的资金入市，否则后果自负(^-^)</p></li></ul>]]></content>
+        <content type="html"><![CDATA[<ul><li>从基金持股百分之三和北上资金3000万的股票里，选出接近一年新高的股票<ul><li>开盘后关注量能大的、突破时放量的、涨幅在5个点以上的板块龙头</li><li>最好是该股所属的板块rps也很强势，rps值在90以上</li><li>最好是突破的当天买入</li><li>如果错过了口袋支点买入点，就在后期的首次下10日、20日、50日、120日线买入。</li><li>设置好10%的止损位置，保护本金</li><li></li></ul></li></ul>]]></content>
       
       
       <categories>
@@ -30,12 +30,37 @@
     
     <entry>
       <title>Hello World</title>
-      <link href="/2021/10/05/hello-world/"/>
-      <url>/2021/10/05/hello-world/</url>
+      <link href="/2021/10/06/hello-world/"/>
+      <url>/2021/10/06/hello-world/</url>
       
         <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><span id="more"></span><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
       
       
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>投资与投机</title>
+      <link href="/2021/10/05/%E6%8A%95%E8%B5%84%E4%B8%8E%E6%8A%95%E6%9C%BA/"/>
+      <url>/2021/10/05/%E6%8A%95%E8%B5%84%E4%B8%8E%E6%8A%95%E6%9C%BA/</url>
+      
+        <content type="html"><![CDATA[<ul><li><p>关于投资</p><ul><li>从国家宏观政策导向出发，分析行业发展空间，以股东的角色来分析公司的估值，以合理的价格买入标来获取回报</li><li>如果你买入的标的价格下跌，如果你是喜欢的，从这个角度上看是在投资</li></ul></li><li><p>关于投机</p><ul><li><p>不了解公司所属行业、主营业务、财务结构、盈利模式、成长空间等要素，直接看k线图来决定买卖的就是投机，或者叫做趋势投资。</p></li><li><p>当你买入的股票发生下跌后，一旦价格跌破你能承受的范围之内，不知道发生了什么，想快速卖出的就是投机</p></li></ul></li><li><p>投资与投机是两种不同的行为，无所谓好坏，但是你要知道自己在做什么。投机的话，不能投入权重过大的资金入市，否则后果自负(^-^)</p></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> stock </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> stock </tag>
+            
+        </tags>
       
     </entry>
     
@@ -946,7 +971,7 @@
       <link href="/2021/06/08/Hexo%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E9%83%A8%E7%BD%B2%E5%88%B0coding/"/>
       <url>/2021/06/08/Hexo%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E9%83%A8%E7%BD%B2%E5%88%B0coding/</url>
       
-        <content type="html"><![CDATA[<h2 id="把Hexo生成的静态网页部署到coding上"><a href="#把Hexo生成的静态网页部署到coding上" class="headerlink" title="把Hexo生成的静态网页部署到coding上"></a>把Hexo生成的静态网页部署到coding上</h2><p>因为github的网速问题，可以尝试把hexo生成的静态博客文件发布到coding上。</p><ul><li>首先注册coding账号(<a href="https://coding.net/">CODING - 一站式软件研发管理平台</a>)，并绑定腾讯云（需要实名认证）</li><li>新建5人以下团队的项目</li><li>新建代码仓库(选择devops)，可以选择添加readme文件</li><li>点击代码仓库中，在左下角显示项目设置，再选择功能开关，如果不熟悉，可以打开所有功能开关，持续集成和持续部署要选择。</li><li>在本地的git bash 命令窗口下，使用clip &lt; id_ed25519.pub ，把公钥的内容输出到剪贴板，在coding的个人账户设置里，添加公钥内容并保存。使用ssh -T  <a href="mailto:&#x67;&#105;&#x74;&#x40;&#99;&#111;&#100;&#x69;&#x6e;&#103;&#x2e;&#x6e;&#x65;&#116;">&#x67;&#105;&#x74;&#x40;&#99;&#111;&#100;&#x69;&#x6e;&#103;&#x2e;&#x6e;&#x65;&#116;</a>  测试ssh协议链接。</li><li> 编辑hexo博客项目根目录下的_config.yml文件，把deployer段的内容修改下面的内容：</li></ul><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">git@e.coding.net:username/myblog/hexoblog.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span>  </span><br><span class="line"></span><br></pre></td></tr></table></figure><ul><li>hexo g -d   发布到coding腾讯云空间</li><li>部署成功后，设置自定义以域名</li></ul><h3 id="部署在coding的静态网站的收费标准"><a href="#部署在coding的静态网站的收费标准" class="headerlink" title="部署在coding的静态网站的收费标准"></a>部署在coding的静态网站的收费标准</h3><ul><li>有6个月的免费试用期，后期应该是要收取费用的，具体可以查看coding 官方的资费明细</li></ul><h3 id="自动部署"><a href="#自动部署" class="headerlink" title="自动部署"></a>自动部署</h3><p>也可以实现自动部署博客到coding</p>]]></content>
+        <content type="html"><![CDATA[<h2 id="把Hexo生成的静态网页部署到coding上"><a href="#把Hexo生成的静态网页部署到coding上" class="headerlink" title="把Hexo生成的静态网页部署到coding上"></a>把Hexo生成的静态网页部署到coding上</h2><p>因为github的网速问题，可以尝试把hexo生成的静态博客文件发布到coding上。</p><ul><li>首先注册coding账号(<a href="https://coding.net/">CODING - 一站式软件研发管理平台</a>)，并绑定腾讯云（需要实名认证）</li><li>新建5人以下团队的项目</li><li>新建代码仓库(选择devops)，可以选择添加readme文件</li><li>点击代码仓库中，在左下角显示项目设置，再选择功能开关，如果不熟悉，可以打开所有功能开关，持续集成和持续部署要选择。</li><li>在本地的git bash 命令窗口下，使用clip &lt; id_ed25519.pub ，把公钥的内容输出到剪贴板，在coding的个人账户设置里，添加公钥内容并保存。使用ssh -T  <a href="mailto:&#x67;&#105;&#116;&#x40;&#x63;&#x6f;&#100;&#x69;&#x6e;&#103;&#x2e;&#x6e;&#101;&#116;">&#x67;&#105;&#116;&#x40;&#x63;&#x6f;&#100;&#x69;&#x6e;&#103;&#x2e;&#x6e;&#101;&#116;</a>  测试ssh协议链接。</li><li> 编辑hexo博客项目根目录下的_config.yml文件，把deployer段的内容修改下面的内容：</li></ul><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">git@e.coding.net:username/myblog/hexoblog.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span>  </span><br><span class="line"></span><br></pre></td></tr></table></figure><ul><li>hexo g -d   发布到coding腾讯云空间</li><li>部署成功后，设置自定义以域名</li></ul><h3 id="部署在coding的静态网站的收费标准"><a href="#部署在coding的静态网站的收费标准" class="headerlink" title="部署在coding的静态网站的收费标准"></a>部署在coding的静态网站的收费标准</h3><ul><li>有6个月的免费试用期，后期应该是要收取费用的，具体可以查看coding 官方的资费明细</li></ul><h3 id="自动部署"><a href="#自动部署" class="headerlink" title="自动部署"></a>自动部署</h3><p>也可以实现自动部署博客到coding</p>]]></content>
       
       
       
@@ -1016,7 +1041,7 @@
       <link href="/2021/05/28/git%E5%91%BD%E4%BB%A4%E5%85%A5%E9%97%A8/"/>
       <url>/2021/05/28/git%E5%91%BD%E4%BB%A4%E5%85%A5%E9%97%A8/</url>
       
-        <content type="html"><![CDATA[<ul><li><p>新建一个目录 branch_demo</p></li><li><p>cd branch_demo</p></li><li><p>git init </p></li><li><p>git status </p></li><li><p>git checkout -b branch-name</p></li><li><p>echo “git branch start” &gt;&gt; readme.md</p></li><li><p>git add .</p></li><li><p>git commit -m “git branch start”</p></li><li><p>git remote add origin <a href="https://github.com/usermame.github.io.git">https://github.com/usermame.github.io.git</a>    or    git remote add origin <a href="mailto:&#103;&#x69;&#x74;&#x40;&#103;&#105;&#116;&#104;&#x75;&#98;&#x2e;&#99;&#111;&#x6d;">&#103;&#x69;&#x74;&#x40;&#103;&#105;&#116;&#104;&#x75;&#98;&#x2e;&#99;&#111;&#x6d;</a>:username.github.io.git</p></li><li><p>git push -u origin    —-新建分支第一次推送到远程时，需要-u参数指明上游，或者使用–set-upstream,以后再推送就不需要-u参数了</p></li></ul>]]></content>
+        <content type="html"><![CDATA[<ul><li><p>新建一个目录 branch_demo</p></li><li><p>cd branch_demo</p></li><li><p>git init </p></li><li><p>git status </p></li><li><p>git checkout -b branch-name</p></li><li><p>echo “git branch start” &gt;&gt; readme.md</p></li><li><p>git add .</p></li><li><p>git commit -m “git branch start”</p></li><li><p>git remote add origin <a href="https://github.com/usermame.github.io.git">https://github.com/usermame.github.io.git</a>    or    git remote add origin <a href="mailto:&#103;&#105;&#116;&#64;&#x67;&#105;&#116;&#x68;&#117;&#98;&#46;&#99;&#x6f;&#x6d;">&#103;&#105;&#116;&#64;&#x67;&#105;&#116;&#x68;&#117;&#98;&#46;&#99;&#x6f;&#x6d;</a>:username.github.io.git</p></li><li><p>git push -u origin    —-新建分支第一次推送到远程时，需要-u参数指明上游，或者使用–set-upstream,以后再推送就不需要-u参数了</p></li></ul>]]></content>
       
       
       <categories>

@@ -1,9 +1,8 @@
 ---
-title: remove-bg
+title: 智能化批量更改证件照片背景颜色
 date: 2021-12-01 17:05:25
 tags: ps
 categories: ps
-cover: /2021/12/01/remove-bg/remove_bg_online.jpg
 ---
 
 
@@ -21,7 +20,10 @@ cover: /2021/12/01/remove-bg/remove_bg_online.jpg
     ![images](images/remove_bg_login_with_api_key.jpg)
   
   * 下面是更换证件照片的简单过程记录
+  
   * ![images](/images/remove_bg.jpg)
+  
+  * 有个技巧，软件窗口顶部有一句提示语：Drag images into the area below （注意是images，复数形式意味着可以一次处理多张图片，只需要把多张照片拖放到这里即可,一次处理很多个照片，瞬间完成背景颜色更换)
 
 # How to install remove.bg for Windows/Mac/Linux?
 

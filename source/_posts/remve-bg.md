@@ -24,6 +24,9 @@ categories: ps
   * ![images](/images/remove_bg.jpg)
   
   * 有个技巧，软件窗口顶部有一句提示语：Drag images into the area below （注意是images，复数形式意味着可以一次处理多张图片，只需要把多张照片拖放到这里即可,一次处理很多个照片，瞬间完成背景颜色更换)
+  
+
+<!--more-->
 
 # How to install remove.bg for Windows/Mac/Linux?
 

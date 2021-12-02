@@ -1,5 +1,5 @@
 ---
-title: remve-bg
+title: remove-bg
 date: 2021-12-01 17:05:25
 tags: ps
 categories: ps

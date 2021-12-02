@@ -1,5 +1,5 @@
 ---
-title: 智能化批量更改证件照片背景颜色
+title: 智能批量更改证件照片背景颜色
 date: 2021-12-01 17:05:25
 tags: ps
 categories: ps
@@ -7,7 +7,7 @@ categories: ps
 
 
 
-* 在更换证照背景颜色时，专业的技法是通过photoshop等图像处理软件手动处理，需要专业的图形处理基础知识和众多的经验，否则会事倍功半。  这里推荐一个微信公众号好的免费小程序：免冠照助手。
+* 在更换证照背景颜色时，专业的技法是通过photoshop等图像处理软件手动处理，需要专业的图形处理基础知识和众多的经验，否则会事倍功半。  这里推荐一个微信公众号免费小程序：免冠照助手。另外一个是全自动的智能图片背景处理程序：removebg。这里主要介绍removebg。
 
 * 一个智能的全自动更换背景软件：removebg ，网站地址：https://www.remove.bg
   
@@ -25,8 +25,9 @@ categories: ps
   
   * 有个技巧，软件窗口顶部有一句提示语：Drag images into the area below （注意是images，复数形式意味着可以一次处理多张图片，只需要把多张照片拖放到这里即可,一次处理很多个照片，瞬间完成背景颜色更换)
   
-
 <!--more-->
+
+
 
 # How to install remove.bg for Windows/Mac/Linux?
 

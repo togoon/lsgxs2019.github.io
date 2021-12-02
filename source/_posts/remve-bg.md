@@ -3,7 +3,7 @@ title: remve_bg
 date: 2021-12-01 17:05:25
 tags: ps
 categories: ps
-cover: \2021\12\01\remove_bg\remove_bg.jpg
+cover: \2021\12\01\remove_bg\remove_bg_online.jpg
 ---
 
 

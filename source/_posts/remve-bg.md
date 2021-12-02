@@ -1,9 +1,9 @@
 ---
-title: remve_bg
+title: remve-bg
 date: 2021-12-01 17:05:25
 tags: ps
 categories: ps
-cover: \2021\12\01\remove_bg\remove_bg_online.jpg
+cover: \2021\12\01\remove-bg\remove_bg_online.jpg
 ---
 
 
@@ -16,7 +16,7 @@ cover: \2021\12\01\remove_bg\remove_bg_online.jpg
   
 * 下面是自己使用removebg处理证件照片的过程，做个笔记备忘。
 
-  * 先在网站注册账户，然后使用App Key登陆，如下图：
+  * 先在网站注册账户，然后使用API Key登陆，如下图：
 
     ![images](images/remove_bg_login_with_api_key.jpg)
   
